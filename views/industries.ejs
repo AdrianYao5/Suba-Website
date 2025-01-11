@@ -1,0 +1,57 @@
+<%- include("partials/header.ejs", { pageTitle: "Industries" }); %>
+
+<main class="comfortaa page-content">
+    <div class="text-light text-center">
+        <div class="img-container">
+            <img class="img-background" src="/images/image043.png">
+            <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
+                <div class="container p-5">
+                    <h1 class="display-4 fw-bold">Industries</h1>
+                    <p class="fs-3 my-4">Suba Technology serves customers from the following industries:</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blue-bg feature-block">
+            <div class="container-fluid">
+                <% 
+                if(locals.industriesList) { 
+                    const industriesList = locals.industriesList;
+                %>
+                    <div class="row gx-md-2 gx-lg-4 gx-0 gy-5 features justify-content-center">
+                        <% for (const industry in industriesList) { %>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="card-link">
+                                <div class="card-container">
+                                    <div class="card border-light-subtle">
+                                        <img class="card-img-top" src="<%= industriesList[industry].imagePath %>">
+                                        <div class="card-body my-3 d-flex flex-column justify-content-center align-items-center">
+                                            <object class="service-svg mb-3" type="image/svg+xml" data="<%= industriesList[industry].pathToSVG %>"></object>
+                                            <h2 class="fw-normal"><%= industriesList[industry].industryType %></h2>
+                                        </div>
+                                    </div>
+                                    <div class="card card-shadow">
+                                        <div class="card-body"></div>
+                                    </div>
+                                    <div class="card card-shadow-2">
+                                        <div class="card-body"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <% } %>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-light text-center blue-bg-2">
+        <div class="container p-5">
+            <h1 class="display-5 fw-bold my-5">Find out if Suba Technology is the right choice to help your industry.</h1>
+            <a class="btn btn-lg btn-light text-blue" href="/contact">Get Started</a>
+        </div>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs"); %>

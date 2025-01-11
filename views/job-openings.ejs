@@ -1,0 +1,164 @@
+<%- include("partials/header.ejs", { pageTitle: "Job Openings" }); %>
+
+<main class="comfortaa page-content">
+    <div class="text-light text-start blue-bg">
+        <div class="container p-5">
+            <h1 class="display-5 fw-bold">Job Openings</h1>
+            <p class="lead my-4">
+                Join our collaboration-based culture that is caring and open to new ideas and change.
+            </p>
+        </div>
+    </div>
+
+    <% 
+    if (locals.jobs && locals.departments) {
+        const jobs = locals.jobs;
+        const departments = locals.departments;
+    %>
+    <div class="text-light text-center blue-bg-2">
+        <div class="container p-5" data-bs-theme="light">
+            <form action="/careers/jobOpenings" id="jobFilter" method="post">
+                <div class="row g-0">
+                    <div class="col-12 col-md-6">
+                        <input id="keyTerm" name="keyTerm" class="form-control form-control-lg" type="text" placeholder="Search" aria-label="Search for a job">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="input-group">
+                            <select id="keyCategory" name="keyCategory" class="form-select form-select-lg"
+                                aria-label="Department select box">
+                                <option selected>All Departments</option>
+                                <% for (let i=0; i < departments.length; i++) { %>
+                                    <option value="<%= departments[i] %>">
+                                        <%= departments[i] %>
+                                    </option>
+                                    <% } %>
+                            </select>
+                            <button type="submit" class="btn btn-lg btn-outline-dark bg-light py-1 px-2">
+                                <object class="search-svg my-auto h-100" type="image/svg+xml" data="/svgs/search.svg"></object>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="card mt-4">
+                <ul class="list-group list-group-flush">
+                    <% for (let j=0; j < jobs.length; j++) { currentJob=jobs[j]; jobElementID="j" + currentJob.job_id; %>
+                        <li class="list-group-item p-0">
+                            <button type="button" class="btn w-100 h-100 border-0" data-bs-toggle="modal"
+                                data-bs-target="#<%= jobElementID %>">
+                                <div class="text-start p-2">
+                                    <p class="lead mb-2 fw-bold text-blue">
+                                        <%= currentJob.title %>
+                                    </p>
+                                    <p class="mb-0 fw-lighter">
+                                        <%= currentJob.date_posted %> - <%= currentJob.department %>
+                                    </p>
+                                </div>
+                            </button>
+                            <div class="modal fade" id="<%= jobElementID %>" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="text-start">
+                                                <h1 class="modal-title fs-4 fw-bold text-blue"><%= currentJob.title %></h1>
+                                                <p class="mb-0 fw-lighter">
+                                                    <%= currentJob.date_posted %> - <%= currentJob.department %>
+                                                </p>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-theme="light" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid text-start">
+                                                <div class="mb-3">
+                                                    <h3 class="fs-5 text-blue">Job Type</h3>
+                                                    <p class="fs-6"><%= currentJob.type %></p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="fs-5 text-blue">Salary</h3>
+                                                    <p class="fs-6">$<%= currentJob.salary %> per year</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="fs-5 text-blue">Description</h3>
+                                                    <p class="fs-6"><%= currentJob.description %></p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="fs-5 text-blue">Schedule</h3>
+                                                    <ul class="fs-6">
+                                                        <li><b class="fw-bold">Work Hours:</b>
+                                                            <%= currentJob.schedule.time %>
+                                                        </li>
+                                                        <% const tasks=currentJob.schedule.routine; if(Array.isArray(tasks) && tasks.length> 0) { %>
+                                                            <li>
+                                                                <b class="fw-bold">Overview:</b>
+                                                                <ul>
+                                                                    <% for(const task of tasks) { %>
+                                                                        <li>
+                                                                            <%= task %>
+                                                                        </li>
+                                                                        <% } %>
+                                                                </ul>
+                                                            </li>
+                                                            <% } %>
+                                                    </ul>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="fs-5 text-blue">Qualifications</h3>
+                                                    <ul class="fs-6">
+                                                        <% const requiredQualifications=currentJob.qualifications.required; 
+                                                            const preferredQualifications=currentJob.qualifications.preferred; %>
+                                                            <li>
+                                                                <b class="fw-bold">Required:</b>
+                                                                <ul>
+                                                                    <% for(const r of requiredQualifications) { %>
+                                                                        <li>
+                                                                            <%= r %>
+                                                                        </li>
+                                                                        <% } %>
+                                                                </ul>
+                                                            </li>
+                                                            <% if(Array.isArray(preferredQualifications) && preferredQualifications.length> 0) { %>
+                                                                <li>
+                                                                    <b class="fw-bold">Preferred:</b>
+                                                                    <ul>
+                                                                        <% for(const p of preferredQualifications) { %>
+                                                                            <li>
+                                                                                <%= p %>
+                                                                            </li>
+                                                                            <% } %>
+                                                                    </ul>
+                                                                </li>
+                                                                <% } %>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h3 class="fs-5 text-blue">Benefits</h3>
+                                                    <ul class="fs-6">
+                                                        <% const benefits=currentJob.benefits; for(const b of benefits) { %>
+                                                            <li>
+                                                                <%= b %>
+                                                            </li>
+                                                            <% } %>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form action="/applicationForm" method="post">
+                                                <input type="hidden" id="jobID" name="jobID" value="<%= currentJob.job_id %>">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Apply</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <% } %>
+</main>
+
+<%- include("partials/footer.ejs"); %>

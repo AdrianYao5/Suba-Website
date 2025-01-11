@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs", { pageTitle: "Application Form" }); %>
+<% if (locals.selectedJob) { const selectedJob = locals.selectedJob; %>
+<main class="comfortaa page-content">
+    <div class="text-light text-start blue-bg-2">
+        <div class="container p-5">
+            <div class="card" data-bs-theme="light">
+                <div class="card-header">
+                    <div class="text-start py-3 px-5">
+                        <p class="display-6 mb-2 fw-bold text-blue">
+                            <%= selectedJob.title %>
+                        </p>
+                        <p class="fs-4 mb-0 fw-lighter">
+                            <%= selectedJob.date_posted %> - <%= selectedJob.department %>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-body p-5">
+                    <% if (locals.form) { %>
+                        <% if (locals.countries) { %>
+                            <%- include(locals.form, { countries: locals.countries } ); %>
+                                <% } else { %>
+                                    <%- include(locals.form); %>
+                                        <% }} %>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<% } %>
+<%- include("partials/footer.ejs"); %>

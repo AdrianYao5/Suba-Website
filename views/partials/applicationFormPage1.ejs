@@ -1,0 +1,185 @@
+<form action="/careers/jobOpenings" class="needs-validation" method="post" novalidate>
+    <div class="px-5 pb-5 border-bottom">
+        <h1 class="fs-4 mb-3 text-blue">Apply faster by uploading your resume here:</h1>
+        <div class="input-group input-group-lg">
+            <input type="file" class="form-control form-control-lg rounded-0" id="resumeFile" aria-describedby="resumeFileAddOn" aria-label="Select Resume">
+            <button class="btn btn-outline-light blue-bg-2 rounded-0" type="button" id="resumeFileAddOn">Fill</button>
+        </div>
+    </div>
+    <div class="row gx-5 gy-4 border-bottom py-5">
+        <div class="col-12">
+            <h1 class="display-6 text-blue">Contact Information</h1>
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">First Name *</h1>
+            <input id="firstName" name="firstName" class="form-control form-control-lg" type="text" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">Last Name *</h1>
+            <input id="lastName" name="lastName" class="form-control form-control-lg" type="text" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">Middle Name</h1>
+            <input id="middleName" name="middleName" class="form-control form-control-lg" type="text">
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">Preferred Name</h1>
+            <input id="preferredName" name="preferredName" class="form-control form-control-lg" type="text">
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">Email *</h1>
+            <input id="email" name="email" class="form-control form-control-lg" type="email" placeholder="user@example.com" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">Mobile Number *</h1>
+            <input id="mobileNumber" name="mobileNumber" class="form-control form-control-lg" type="text" placeholder="xxx-xxx-xxxx" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">Home Phone Number *</h1>
+            <input id="homeNumber" name="homeNumber" class="form-control form-control-lg" type="text" placeholder="xxx-xxx-xxxx" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">Have you applied with us before?</h1>
+            <select id="hasApplied" name="hasApplied" class="form-select form-select-lg short-select"
+                aria-label="Previously applied box">
+                <option selected>--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="fs-5 mb-2 text-blue">^ We may use SMS during the hiring process. Do you give us permission to text you? *</h1>
+            <select id="canSMS" name="canSMS" class="form-select form-select-lg short-select"
+                aria-label="SMS select box" required>
+                <option selected>--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <p class="fs-6 mb-0">
+                ^ I consent to receive text messages at the mobile number provided. Message and data rates may apply. Message frequency varies. Reply 'STOP' at any time if you no longer wish to receive text messages regarding this job.
+            </p>
+        </div>
+    </div>
+    <div class="row gx-5 gy-4 border-bottom py-5">
+        <div class="col-12">
+            <h1 class="display-6 text-blue">Address</h1>
+        </div>
+        <div class="col-12">
+            <h1 class="fs-5 mb-2 text-blue">Country *</h1>
+            <select id="country" name="country" class="form-select form-select-lg country-select" aria-label="Country select box"
+                required>
+                <% if (locals.countries) { for (const country of locals.countries) { %>
+                    <option value="<%= country.code %>" <% if (country.code==="US" ) { %>selected<% } %>>
+                            <%= country.name %>, <%= country.code %>
+                    </option>
+                    <% }} %>
+            </select>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Address 1 *</h1>
+            <input id="address1" name="address1" class="form-control form-control-lg" type="text" required>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Address 2</h1>
+            <input id="address2" name="address2" class="form-control form-control-lg" type="text">
+        </div>
+        <div class="col-12 col-lg-4">
+            <h1 class="fs-5 mb-2 text-blue">City *</h1>
+            <input id="city" name="city" class="form-control form-control-lg" type="text" required>
+        </div>
+        <div class="col-12 col-lg-4">
+            <h1 class="fs-5 mb-2 text-blue">State / Province *</h1>
+            <input id="state" name="state" class="form-control form-control-lg" type="text" required>
+        </div>
+        <div class="col-12 col-lg-4">
+            <h1 class="fs-5 mb-2 text-blue">Postal / Zip Code *</h1>
+            <input id="zipCode" name="zipCode" class="form-control form-control-lg" type="text" required>
+        </div>
+    </div>
+    <div class="row gx-5 gy-4 border-bottom py-5">
+        <div class="col-12">
+            <h1 class="display-6 text-blue">Skills and Experience</h1>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Your Skills </h1>
+            <div class="input-group input-group-lg">
+                <input id="skills" name="skills" class="form-control form-control-lg rounded-0" type="text" placeholder="Enter your skills and press + to add">
+                <button class="btn btn-outline-light blue-bg-2 rounded-0" type="button" id="addSkillButton">+</button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <textarea id="skillsList" name="skillsList" class="form-control" readonly></textarea>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Work History</h1>
+            <button class="btn btn-lg btn-outline-light blue-bg-2 rounded-0" type="button" id="addWorkHistoryButton">+ Add Work History</button>
+        </div>
+        <div class="col-12 col-lg-6">
+            <textarea id="workHistory" name="workHistory" class="form-control" readonly></textarea>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Education History</h1>
+            <div class="input-group input-group-lg mb-2">
+                <input id="awards" name="awards" class="form-control form-control-lg rounded-0" type="text" placeholder="Enter your awards and press + to add">
+                <button class="btn btn-outline-light blue-bg-2 rounded-0" type="button" id="addEducationHistoryButton">+</button>
+            </div>
+            <button class="btn btn-lg btn-outline-light blue-bg-2 rounded-0" type="button" id="addEducationHistory">+ Add Education History</button>
+        </div>
+        <div class="col-12 col-lg-6">
+            <textarea id="educationHistory" name="educationHistory" class="form-control" readonly></textarea>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Cover Letter</h1>
+            <input type="file" class="form-control form-control-lg rounded-0" id="cvFile" name="cvFile" aria-describedby="cvFileAddOn" aria-label="Select Cover Letter">
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Other Files</h1>
+            <input type="file" class="form-control form-control-lg rounded-0" id="extraFiles" name="extraFiles[]" aria-describedby="extraFilesAddOn" aria-label="Select Other Files" multiple>
+        </div>
+    </div>
+    <div class="row gx-5 gy-4 border-bottom py-5">
+        <div class="col-12">
+            <h1 class="display-6 text-blue">Other Questions</h1>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">How did you hear about us? *</h1>
+            <select id="reachOut" name="reachOut" class="form-select form-select-lg"
+                aria-label="Reaching out select box" required>
+                <option value="jobBoard" selected>Online Job Board</option>
+                <option value="companySite">Company Website</option>
+                <option value="familyFriend">Friend / Family Member</option>
+                <option value="employee">Current Employee</option>
+                <option value="linkedIn">LinkedIn</option>
+                <option value="indeed">Indeed</option>
+                <option value="recruiter">Company Recruiter</option>
+                <option value="ad">Advertisement - Radio / Online</option>
+                <option value="jobFair">Job Fair</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Date Available to Start</h1>
+            <input id="startDate" name="startDate" class="form-control form-control-lg" type="date">
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">LinkedIn URL</h1>
+            <input id="linkedInURL" name="linkedInURL" class="form-control form-control-lg" type="text">
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Desired Salary</h1>
+            <input id="salary" name="salary" class="form-control form-control-lg" type="text">
+        </div>
+        <div class="col-12 col-lg-6">
+            <h1 class="fs-5 mb-2 text-blue">Referred By</h1>
+            <input id="referredBy" name="referredBy" class="form-control form-control-lg" type="text">
+        </div>
+    </div>
+    <div class="pt-3">
+        <p class="fs-5 mb-4 fw-bold text-blue">* Required</p>
+        <div class="d-flex align-items-center justify-content-end">
+            <button class="btn btn-lg btn-outline-light blue-bg-2" type="submit">Next</button>
+        </div>
+    </div>
+</form>

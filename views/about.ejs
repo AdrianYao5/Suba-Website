@@ -1,0 +1,182 @@
+<%- include("partials/header.ejs", { pageTitle: "Our Company" }); %>
+<main class="comfortaa page-content">
+    <div class="text-light text-center">
+        <div class="img-container">
+            <img class="img-background" src="/images/image043.png">
+            <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
+                <div class="container p-5">
+                    <h1 class="display-4 fw-bold">Our Company</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutUs" class="text-light text-start">
+        <div class="container p-5">
+            <h1 class="display-4 fw-bold">About Us</h1>
+            <p class="lead my-4">
+                As a manufacturer of finished products and sub-assemblies for Medical, Telecommunications, 
+                IoT, Consumer Electronics, EV, Aerospace and Defense, we provide optimized solutions by using 
+                the latest technologies.
+            </p>
+        </div>
+    </div>
+    <% 
+        let introductionImages = [
+            "/images/image001.png", "/images/image029.png", "/images/image018.png", 
+            "/images/image037.png", "/images/image031.png"
+        ];
+        let valuesImages = [
+            "/images/image024.png", "/images/image039.png", "/images/aftermarket1.png",
+            "/images/image019.png", "/images/image040.png", "/images/fulfillment.png"
+        ];
+    %>
+    <div class="row g-0 overflow-hidden">
+        <div class="col-12 col-lg-7">
+            <div class="row g-0 image-gallery bg-white">
+                <% if(introductionImages.length < 2) { %>
+                <div class="col-12">
+                    <% for(let k = 0; k < introductionImages.length; k++) { %>
+                    <img src="<%= introductionImages[k] %>">
+                    <% } %>
+                </div>
+                <% 
+                } 
+                else {
+                    let midpoint = Math.floor(introductionImages.length / 2);
+                    let galleryLeft = introductionImages.slice(0, midpoint);
+                    let galleryRight = introductionImages.slice(midpoint, introductionImages.length);
+                %>
+                <div class="col-6">
+                    <% for(let i = 0; i < galleryLeft.length; i++) { %>
+                    <img src="<%= galleryLeft[i] %>">
+                    <% } %>
+                </div>
+                <div class="col-6">
+                    <% for(let j = 0; j < galleryRight.length; j++) { %>
+                    <img src="<%= galleryRight[j] %>">
+                    <% } %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5">
+            <div class="text-light text-start h-100 blue-bg-2">
+                <div class="container p-5">
+                    <h1 class="display-5 fw-bold my-4">Introduction</h1>
+                    <p class="lead my-4">
+                        Suba Technology was founded in 2001 with the mission to provide high-quality, full-service 
+                        contract manufacturing solutions. With a 60,000 square-foot facility and over 25 years of experience, 
+                        Suba Technology continues to deliver innovation, superb quality, and outstanding customer service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-0 overflow-hidden">
+        <div class="col-12 col-lg-7 order-lg-last">
+            <div class="row g-0 image-gallery bg-white">
+                <% if(valuesImages.length < 2) { %>
+                <div class="col-12">
+                    <% for(let k = 0; k < valuesImages.length; k++) { %>
+                    <img src="<%= valuesImages[k] %>">
+                    <% } %>
+                </div>
+                <% 
+                } 
+                else {
+                    let midpoint = Math.floor(valuesImages.length / 2);
+                    let galleryLeft = valuesImages.slice(0, midpoint);
+                    let galleryRight = valuesImages.slice(midpoint, valuesImages.length);
+                %>
+                <div class="col-6">
+                    <% for(let i = 0; i < galleryLeft.length; i++) { %>
+                    <img src="<%= galleryLeft[i] %>">
+                    <% } %>
+                </div>
+                <div class="col-6">
+                    <% for(let j = 0; j < galleryRight.length; j++) { %>
+                    <img src="<%= galleryRight[j] %>">
+                    <% } %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5 order-lg-first">
+            <div class="text-light text-start h-100 blue-bg">
+                <div class="container p-5">
+                    <h1 class="display-5 fw-bold my-4">Our Values</h1>
+                    <h3 class="fw-bold fs-4 my-3">Continuous Investment in Equipment, People and Process</h3>
+                    <p class="my-4">
+                        In the last 5 years, we invested in modern equipment and people to keep up with the demanding market. 
+                        We doubled our team of key personnel to better serve our customers.
+                    </p>
+                    <h3 class="fw-bold fs-4 my-3">Unwavering Commitment to Our Customers</h3>
+                    <p class="my-4">
+                        Our commitment to excellence brought our yield average and our on-time performance to at least 98%. 
+                        Suba Technology will be able to sustain today and future needs of our customer with its quality yet 
+                        affordable service.
+                    </p>
+                    <h3 class="fw-bold fs-4 my-3">Facility and Manpower</h3>
+                    <p class="my-4">
+                        We are a privately owned company with approximately 30,000 square feet facility located in Fremont, California. 
+                        Suba Technology is an IPC Class II and Class III Compliant, RoHS Compliant, ISO 9001:2015 Certified, 
+                        and IPC-610 trained workforce.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="leadership" class="text-light text-center">
+        <div class="img-container">
+            <img class="img-background" src="/images/image024.png">
+            <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
+                <div class="container p-5">
+                    <h1 class="display-4 fw-bold">Our Leadership</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-light text-center feature-block">
+        <div class="row gx-md-2 gx-lg-4 gx-0 gy-5 features justify-content-center mx-auto">
+            <% 
+            if (locals.personnel && Array.isArray(locals.personnel)) {
+                for (let i = 0; i < personnel.length; i++) {
+                    let currentEmployee = personnel[i];
+            %>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card-container">
+                    <div class="card border-light-subtle">
+                        <img class="card-img-top" src="<%= currentEmployee.imagePath %>">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h2 class="fs-4 fw-bold"><%= currentEmployee.fullName %></h2>
+                            <h4 class="fs-6 fw-bold"><%= currentEmployee.role %></h4>
+                            <p class="lead mt-3"><%= currentEmployee.description %></p>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-body"></div>
+                    </div>
+                    <div class="card card-shadow-2">
+                        <div class="card-body"></div>
+                    </div>
+                </div>
+            </div>
+            <% 
+                }
+            } 
+            %>
+        </div>
+    </div>
+
+    <div class="text-light text-center blue-bg-2">
+        <div class="container p-5">
+            <h1 class="display-5 fw-bold my-5">Suba Technology delivers on its promise to high-quality manufacturing.</h1>
+            <a class="btn btn-lg btn-light text-blue" href="/contact">Get Started</a>
+        </div>
+    </div>
+</main>
+<%- include("partials/footer.ejs"); %>
