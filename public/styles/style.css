@@ -1,0 +1,437 @@
+:root {
+    --bg-blue-2: radial-gradient(circle at 52.1% -29.6%,#0081AB 0%, #08457b 100.2%);
+    --bg-blue: radial-gradient(circle at 74.2% 50.9%, #002387 5.2%, #191970 75.3%);
+    --gradient-img: url(/images/gradient-bg-v2.png);
+    --steel-blue: #08457b;
+    --blue: #002387;
+    --shadow-offset: 7px;
+    --dark-bg-transparent: rgba(0, 0, 0, 0.45);
+    --height-carousel: 750px;
+    --height-gallery: 600px;
+    --height-features: 500px;
+    --navbar-height: 10rem;
+}
+
+.text-blue, 
+.text-blue .nav-link, 
+.text-blue .dropdown-item {
+    color: var(--steel-blue);
+}
+
+.nav .nav-link, .nav .dropdown-item{
+    color: #0081AB;
+}
+
+.contact-form button {
+    background: var(--bg-blue-2);
+    color: #fff;
+}
+
+.page-navbar {
+    height: var(--navbar-height);
+}
+
+.page-navbar > .navbar {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.page-navbar .navbar-toggler-icon {
+    background-image: url(/svgs/bars-solid.svg);
+}
+
+.page-content {
+    padding-top: var(--navbar-height);
+}
+
+.cnCarousel {
+    display: flex;
+    align-items: center;
+}
+
+#imageCarousel .carousel-item, .industry-gallery {
+    height: 80vh;
+}
+
+.cnCarousel .carousel-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imageCarousel > .carousel-indicators {
+    bottom: 0;
+}
+
+.company-info svg {
+    width: 4.75rem;
+    height: 4.75rem;
+}
+
+.cnCarousel > .carousel-control-prev, 
+.cnCarousel > .carousel-control-next {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 15%;
+    background-color: black;
+    filter: invert(1);
+}
+
+.cnCarousel > .carousel-control-prev {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 2.5rem;
+}
+
+.cnCarousel > .carousel-control-next {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: 2.5rem;
+}
+
+.cnCarousel .carousel-indicators [data-bs-target] {
+    width: 70px;
+    height: 5px;
+}
+
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+/* 
+White arrows in carousel
+*/
+.cnCarousel .carousel-control-prev-icon {
+    background-image: url(/svgs/arrow-left-square-fill.svg);
+}
+
+.cnCarousel .carousel-control-next-icon {
+    background-image: url(/svgs/arrow-right-square-fill.svg);
+}
+
+.cnCarousel .carousel-control-prev-icon,
+.cnCarousel .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+/* 
+White carousel indicators
+*/
+[data-bs-theme=dark] .cnCarousel .carousel-indicators [data-bs-target], 
+[data-bs-theme=dark].cnCarousel .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+}
+
+.navbar-fixed-top {
+    position: relative;
+}
+
+.navbar-fixed-top > .navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.feature-block > div {
+    position: relative;
+    max-width: 1100px;
+    bottom: 60px;
+    z-index: 2;
+}
+
+.features > div, .mini-features > div  {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: var(--shadow-offset);
+    left: var(--shadow-offset);
+    z-index: -1;
+}
+
+.card-shadow > .card-body {
+    background-color: var(--steel-blue);
+}
+
+.card-shadow-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: calc(2 * var(--shadow-offset));
+    left: calc(2 * var(--shadow-offset));
+    z-index: -2;
+}
+
+.card-shadow-2 > .card-body {
+    background-color: var(--blue);
+}
+
+.card-container {
+    position: relative;
+    height: 100%;
+}
+
+.card-container .card {
+    height: 100%;
+}
+
+.service-svg, .industry-svg, .search-svg {
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+.service-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.industry-svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+.search-svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    
+}
+
+.features .card {
+    width: 18rem;
+}
+
+.mini-features .card {
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.card-link object, .search-svg {
+    pointer-events: none;
+}
+
+.card-link[href]:hover {
+    & .card {
+        background-color: #fff;
+    }
+
+    & .card > .card-body {
+        color: black;
+    }
+}
+
+[data-bs-theme="light"] .btn-close {
+    filter: none;
+}
+
+.card, .card > .card-img-top, 
+.input-group > *, .input-group-lg > *, 
+.form-control, .form-control-lg, 
+.form-select, .form-select-lg, 
+.modal-content, .btn, .btn-lg {
+    border-radius: 0%;
+}
+
+textarea.form-control {
+    min-height: 10rem;
+}
+
+.short-select {
+    max-width: 6.25rem;
+}
+
+.country-select {
+    max-width: 45%;
+}
+
+.features .card > .card-body {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.industry-card {
+    width: 18rem;
+    height: 20rem;
+}
+
+.industry-card .card-link {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.industry-gallery > div {
+    position: relative;
+    bottom: 3.5rem;
+}
+
+.industry-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cosmic-bg {
+    background-image: var(--gradient-img);
+    background-position: center center;
+    background-size: cover;
+}
+
+.blue-bg {
+    background: var(--bg-blue);
+}
+
+.blue-bg-2 {
+    background: var(--bg-blue-2);
+}
+
+.dark-transparent-bg {
+    background-color: var(--dark-bg-transparent);
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-footer > .address, 
+.contact-footer > .address .d-flex {
+    justify-content: start;
+}
+
+.contact-footer > .socials {
+    justify-content: end;
+}
+
+.contact-footer > .copyright {
+    justify-content: center;
+}
+
+.media-icons svg {
+    width: 24px;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-background {
+    grid-area: 1 / 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-text {
+    grid-area: 1 / 1;
+    min-height: 70vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.contact-info svg {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 60vh;
+    border: 0;
+}
+
+.footnote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+}
+
+/* for screens up to medium */
+@media only screen and (max-width: 991px) {
+    .industry-gallery {
+        display: flex;
+        flex-direction: row;
+        height: 50vh;
+    }
+
+    #imageCarousel > .carousel-indicators {
+        bottom: 3.25rem;
+    }
+
+    .footnote {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .country-select {
+        max-width: 100%;
+    }
+}
+
+/* for screens up to medium */
+@media only screen and (max-width: 767px) {
+    .page-navbar {
+        height: auto;
+    }
+    
+    .page-navbar > .navbar {
+        height: 100%;
+    }
+
+    .features .card {
+        width: 26rem;
+    }
+
+    .contact-footer > .address, 
+    .contact-footer > .address .d-flex,
+    .contact-footer > .socials {
+        justify-content: center;
+    }
+
+    .img-container {
+        height: 1100px;
+    }
+}
+
+/* for screens up to small */
+@media only screen and (max-width: 576px) {
+    .industry-gallery {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    #imageCarousel > .carousel-indicators {
+        bottom: 4rem;
+    }
+}
