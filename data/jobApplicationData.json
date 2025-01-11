@@ -1,0 +1,170 @@
+{
+    "jobs": [
+        {
+            "job_id": 101,
+            "date_posted": "1/6/2025",
+            "title": "Human Resources Manager",
+            "type": "Full-time",
+            "department": "Human Resources",
+            "description": "The Human Resources Manager delivers strategic talent planning and engagement for the site. This role partners with Site Leadership to cultivate and encourage a productive work environment for all team members and provides thought leadership and collaboration to achieve positive organizational outcomes. The position reports to the Director Human Resources and serves as a member of the senior site leadership team. Your contributions will help us continue our journey towards Winning as One: One company. One team. One purpose. One plan. One culture.",
+            "schedule": {
+                "time": "Monday - Friday, 7:30AM - 3:30PM",
+                "routine": [
+                    "Key HR business partner at the site to transform the operation to be a clear competitive advantage in the marketplace focused on our customers and a desirable place to work for our team members.", 
+                    "Implement talent strategies to execute talent management initiatives and drive outcomes that support a high-performance culture, including talent acquisition, engagement and retention, and succession planning.",
+                    "Lead special projects to drive, influence and support the cultural and people aspects of organizational change, structures, people processes and business improvement initiatives that reflect the business strategy.",
+                    "Provide strategic guidance and support to senior leadership team to align HR strategy and support organizational initiatives.",
+                    "Partner with leaders by providing guidance and counsel in managing people decisions.",
+                    "Monitor and ensure the organization's compliance with federal, state, and local employment laws and regulations, and recommended best practices; review and modify policies and practices to maintain compliance.",
+                    "Drive to continuously improve the effectiveness and efficiency of HR service delivery.",
+                    "Provide strong employee relations."
+                ]
+            },
+            "qualifications": {
+                "required": [
+                    "Education - Bachelor's Degree required in Human Resources or related field, SPHR/SHRM-SCP preferred.", 
+                    "10+ years of experience within a large organization, manufacturing, or similar industry preferred.",
+                    "Experience working with front line workers in a high-volume environment.",
+                    "Strong operation understanding, demonstrated experience in developing an HR talent strategy to achieve shared objectives and drive business strategy.",
+                    "Extensive demonstrated knowledge and experience in all aspects of technical human resource management.",
+                    "Ability to effectively lead and develop the human resource function.",
+                    "Must be a US Citizen, US Permanent Resident, Political Asylee, or Refugee (via ITAR Regulations)."
+                ],
+                "preferred": []
+            },
+            "benefits": [
+                "Full range of medical, dental, and vision benefits. Medical plan options include 1 PPO plans and 2 HSA plans with a Health Savings Account (HSA) thru Highmark BCBS.",
+                "Flexible Savings Accounts for Medical, Dependent Care, and Limited Purpose (dental and vision only)",
+                "PTO and Holiday Pay",
+                "Company-paid life insurance and disability at 1 times your annual salary at no cost to you, with options to increase coverage amounts",
+                "401k with a company match of 50% to every dollar up to 6%",
+                "Accident, Critical Illness, Hospital Indemnity, and Legal Insurance optional plans",
+                "Employee Assistance Program",
+                "Tuition Reimbursement",
+                "Opportunities to grow and excel in the Electronics Manufacturing industry at a company that values promotions and learning from within. Every day is different, challenging, and rewarding."
+            ],
+            "salary": 10000,
+            "is_open": true,
+            "applications": [
+                {
+                    "applicant_id": 101,
+                    "date_applied": "1/24/2025",
+                    "status": "Pending"
+                },
+                {
+                    "applicant_id": 102,
+                    "date_applied": "1/13/2025",
+                    "status": "Pending"
+                }
+            ]
+        },
+        {
+            "job_id": 102,
+            "date_posted": "1/19/2025",
+            "title": "Aerospace & Defense Manufacturing Jobs",
+            "type": "Full-time",
+            "department": "Production",
+            "description": "Are you looking for a great opportunity working in the Aerospace & Defense Industry? We are looking for career minded individuals who are interested in the manufacturing & assembly of critical components for Aerospace, Defense, Medical and Commercial applications.",
+            "schedule": {
+                "time": "Monday - Thursday, 4:00AM - 10:00PM",
+                "routine": []
+            },
+            "qualifications": {
+                "required": [
+                    "Must be a US Citizen, US Permanent Resident, Political Asylee, or Refugee (via ITAR Regulations).", 
+                    "Must be able to work overtime as needed.",
+                    "High school graduate or equivalent.",
+                    "Ability to read and comprehend written work instructions.",
+                    "Ability to add and subtract fractions and decimals using direct reading, gauges, rulers and scales.",
+                    "Must be quality conscious and possess ability to meet production and quality standards.",
+                    "Ability to solve practical problems and/or interpret instructions furnished in written, oral, diagram or schedule form.",
+                    "Must maintain ESD Precautions Standards certification in areas/facilities where required.",
+                    "Must be able to pass J-STD certification course and maintain solder certification to operate certain pieces of equipment."
+                ],
+                "preferred": [
+                    "6-12 months manufacturing experience.",
+                    "May be required to have previous experience with hand tool operation.",
+                    "May require entry to mid-level computer skills.",
+                    "May be required to lift up to 25 lbs as required by the job task."
+                ]
+            },
+            "benefits": [
+                "Job training", "Great wages", 
+                "Health & dental insurance", "Paid vacation and holidays",
+                "Retirement savings"
+            ],
+            "salary": 10000,
+            "is_open": true,
+            "applications": [
+                {
+                    "applicant_id": 101,
+                    "date_applied": "1/23/2025",
+                    "status": "Pending"
+                },
+                {
+                    "applicant_id": 102,
+                    "date_applied": "2/1/2025",
+                    "status": "Pending"
+                }
+            ]
+        },
+        {
+            "job_id": 103,
+            "date_posted": "2/1/2025",
+            "title": "Human Resources Manager",
+            "type": "Full-time",
+            "department": "Human Resources",
+            "description": "The Human Resources Manager delivers strategic talent planning and engagement for the site. This role partners with Site Leadership to cultivate and encourage a productive work environment for all team members and provides thought leadership and collaboration to achieve positive organizational outcomes. The position reports to the Director Human Resources and serves as a member of the senior site leadership team. Your contributions will help us continue our journey towards Winning as One: One company. One team. One purpose. One plan. One culture.",
+            "schedule": {
+                "time": "Monday - Friday, 7:30AM - 3:30PM",
+                "routine": [
+                    "Key HR business partner at the site to transform the operation to be a clear competitive advantage in the marketplace focused on our customers and a desirable place to work for our team members.", 
+                    "Implement talent strategies to execute talent management initiatives and drive outcomes that support a high-performance culture, including talent acquisition, engagement and retention, and succession planning.",
+                    "Lead special projects to drive, influence and support the cultural and people aspects of organizational change, structures, people processes and business improvement initiatives that reflect the business strategy.",
+                    "Provide strategic guidance and support to senior leadership team to align HR strategy and support organizational initiatives.",
+                    "Partner with leaders by providing guidance and counsel in managing people decisions.",
+                    "Monitor and ensure the organization's compliance with federal, state, and local employment laws and regulations, and recommended best practices; review and modify policies and practices to maintain compliance.",
+                    "Drive to continuously improve the effectiveness and efficiency of HR service delivery.",
+                    "Provide strong employee relations."
+                ]
+            },
+            "qualifications": {
+                "required": [
+                    "Education - Bachelor's Degree required in Human Resources or related field, SPHR/SHRM-SCP preferred.", 
+                    "10+ years of experience within a large organization, manufacturing, or similar industry preferred.",
+                    "Experience working with front line workers in a high-volume environment.",
+                    "Strong operation understanding, demonstrated experience in developing an HR talent strategy to achieve shared objectives and drive business strategy.",
+                    "Extensive demonstrated knowledge and experience in all aspects of technical human resource management.",
+                    "Ability to effectively lead and develop the human resource function.",
+                    "Must be a US Citizen, US Permanent Resident, Political Asylee, or Refugee (via ITAR Regulations)."
+                ],
+                "preferred": []
+            },
+            "benefits": [
+                "Full range of medical, dental, and vision benefits. Medical plan options include 1 PPO plans and 2 HSA plans with a Health Savings Account (HSA) thru Highmark BCBS.",
+                "Flexible Savings Accounts for Medical, Dependent Care, and Limited Purpose (dental and vision only)",
+                "PTO and Holiday Pay",
+                "Company-paid life insurance and disability at 1 times your annual salary at no cost to you, with options to increase coverage amounts",
+                "401k with a company match of 50% to every dollar up to 6%",
+                "Accident, Critical Illness, Hospital Indemnity, and Legal Insurance optional plans",
+                "Employee Assistance Program",
+                "Tuition Reimbursement",
+                "Opportunities to grow and excel in the Electronics Manufacturing industry at a company that values promotions and learning from within. Every day is different, challenging, and rewarding."
+            ],
+            "salary": 10000,
+            "is_open": true,
+            "applications": [
+                {
+                    "applicant_id": 101,
+                    "date_applied": "2/3/2025",
+                    "status": "Pending"
+                },
+                {
+                    "applicant_id": 102,
+                    "date_applied": "2/5/2025",
+                    "status": "Pending"
+                }
+            ]
+        }
+    ]
+}

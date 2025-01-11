@@ -1,0 +1,116 @@
+{
+    "applicants": [
+        {
+            "applicant_id": 101,
+            "contact_info": {
+                "first_name": "",
+                "middle_name": "",
+                "last_name": "",
+                "preferred_name": "",
+                "mobile_number": "",
+                "home_number": "",
+                "email": "",
+                "country": "",
+                "address_1": "",
+                "address_2": "",
+                "city": "",
+                "state": "",
+                "postal_code": "",
+                "has_applied_before": false,
+                "can_receive_messages": false
+            },
+            "experience": {
+                "date_available": "",
+                "desired_salary": 10000,
+                "linkin_url": "",
+                "found_through": "",
+                "referred_by": "",
+                "has_worked_before": false,
+                "skills": ["", ""]
+            },
+            "work_history": [
+                {
+                    "company_name": "",
+                    "address": "",
+                    "city": "",
+                    "state": "",
+                    "postal_code": "",
+                    "position": "",
+                    "start_date": "",
+                    "end_date": "",
+                    "reason_for_leave": ""
+                }
+            ],
+            "education": {
+                "awards": ["", ""],
+                "history": [
+                    {
+                        "school_name": "",
+                        "school_type": "",
+                        "area_of_study": "",
+                        "has_graduated": false,
+                        "country": "",
+                        "city": "",
+                        "state": ""
+                    }
+                ]
+            }
+        },
+        {
+            "applicant_id": 102,
+            "contact_info": {
+                "first_name": "",
+                "middle_name": "",
+                "last_name": "",
+                "preferred_name": "",
+                "mobile_number": "",
+                "home_number": "",
+                "email": "",
+                "country": "",
+                "address_1": "",
+                "address_2": "",
+                "city": "",
+                "state": "",
+                "postal_code": "",
+                "has_applied_before": false,
+                "can_receive_messages": false
+            },
+            "experience": {
+                "date_available": "",
+                "desired_salary": 10000,
+                "linkin_url": "",
+                "found_through": "",
+                "referred_by": "",
+                "has_worked_before": false,
+                "skills": ["", ""]
+            },
+            "work_history": [
+                {
+                    "company_name": "",
+                    "address": "",
+                    "city": "",
+                    "state": "",
+                    "postal_code": "",
+                    "position": "",
+                    "start_date": "",
+                    "end_date": "",
+                    "reason_for_leave": ""
+                }
+            ],
+            "education": {
+                "awards": ["", ""],
+                "history": [
+                    {
+                        "school_name": "",
+                        "school_type": "",
+                        "area_of_study": "",
+                        "has_graduated": false,
+                        "country": "",
+                        "city": "",
+                        "state": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
