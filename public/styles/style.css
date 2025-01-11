@@ -422,6 +422,10 @@ textarea.form-control {
     .img-container {
         height: auto;
     }
+
+    .img-text {
+        min-height: 100%;
+    }
 }
 
 /* for screens up to small */
