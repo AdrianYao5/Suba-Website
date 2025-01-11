@@ -1,0 +1,381 @@
+{
+    "services": {
+        "QTP": {
+            "serviceType": "Quick-Turn Prototype",
+            "imagePath": "/images/qtp6.png",
+            "pathToSVG": "/svgs/robot.svg",
+            "pageLink": "/services/quickTurnPrototype",
+            "content": {
+                "title": "Quick-Turn Prototype",
+                "headline": "Sensitivity to our customers’ designs and proof of concepts is what matters.  We strive to do  things right the first time​",
+                "message": "Suba technology prioritizes quality performance against industry standards and fundamentals to deliver products that demand quick turnaround times.",
+                "sections": [
+                    {
+                        "listItems": [
+                            {
+                                "mainItem": "Quick-Turn Delivery *",
+                                "nestedList": [
+                                    "12 hours turn", "2 Days Turn", "3 Days Turn", 
+                                    "5 Days Turn", "7 Days Turn – Standard for FAB and Assembly"
+                                ]
+                            },
+                            {
+                                "mainItem": "DFM (Recommended)",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Flying Probe Test (Recommended)",
+                                "nestedList": []
+                            }
+
+                        ],
+                        "imagePaths": [
+                            "/images/qtp1.png", "/images/qtp2.png", "/images/qtp3.png", 
+                            "/images/qtp4.png", "/images/qtp5.png", "/images/qtp6.png"
+                        ],
+                        "footnote": "* Quick-Turn Delivery starts after all components are in-house and kitted."
+                    }
+                ]
+            }
+        },
+        "QA": {
+            "serviceType": "Quality Assurance",
+            "imagePath": "/images/qa3.png",
+            "pathToSVG": "/svgs/clipboard2-check-fill.svg",
+            "pageLink": "/services/qualityAssurance",
+            "content": {
+                "title": "Quality Assurance",
+                "headline": "Ensuring adherence to the quality policy and quality manual is our everyday way of life​",
+                "message": "Suba Technology's commitment to quality is reflected in its history of zero ppm performance to-date and continual investment in advanced equipment and talented trained personnel. The company is dedicated to delivering the best value to its customers through excellence in service, product quality and continuous improvements.​",
+                "sections": [
+                    {
+                        "listItems": [
+                            {
+                                "mainItem": "QMS",
+                                "nestedList": [
+                                    "ISO 9001",
+                                    "ISO 14001",
+                                    "ISO 13485 (Q1 2025)",
+                                    "IATF 16949 (Q3 2025)",
+                                    "AS 9100D (2026)"
+                                ]
+                            },
+                            {
+                                "mainItem": "Top of the line inspection equipment",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "APQP",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "PPAP",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Geneology / Traceability",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            "/images/qa1.png", "/images/qa3.png", "/images/qa4.png", "/images/qa2.png"
+                        ],
+                        "footnote": ""
+                    }
+                ]
+            }
+        },
+        "VAE": {
+            "serviceType": "Value-Add Engineering",
+            "imagePath": "/images/vae2.png",
+            "pathToSVG": "/svgs/person-fill-gear.svg",
+            "pageLink": "/services/valueAddEngineering",
+            "content": {
+                "title": "Value-Add Engineering",
+                "headline": "Design validation for defect-free manufacturing of products​",
+                "message": "It’s all about the engineering talent in manufacturing, test  and reliability that counts.  Top of the line equipment and tools complements the effectiveness of Suba Technology’s advanced engineering.​",
+                "sections": [
+                    {
+                        "listItems": [
+                            {
+                                "mainItem": "VAVe – Value-Add Value-Engineering",
+                                "nestedList": [
+                                    "PCB Design",
+                                    "Test Development – HW/SW​",
+                                    "Design for Manufacturing (DFM)​",
+                                    "Design for Testability (DFT)",
+                                    "Design for Assembly (DFA)"
+                                ]
+                            },
+                            {
+                                "mainItem": "Power Electronics Engineering",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "RF Engineering",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Optical",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Process Control (PFMEA, SPC)",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Failure Analysis",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            "/images/vae1.png", "/images/vae2.png", "/images/vae3.png", 
+                            "/images/vae4.png", "/images/vae5.png", "/images/vae6.png"
+                        ],
+                        "footnote": ""
+                    }
+                ]
+            }
+        },
+        "AMS": {
+            "serviceType": "Advanced Manufacturing Services",
+            "imagePath": "/images/qtp4.png",
+            "pathToSVG": "/svgs/cpu-fill.svg",
+            "pageLink": "/services/advancedManufacturingServices",
+            "content": {
+                "title": "Advanced Manufacturing Services",
+                "headline": "Meeting commitments to customers’ delivery expectations at high quality levels​",
+                "message": "Whether the programs are at high-mix-low-volume or low-mix-high volume, the focus remains the same timely and disciplined builds against industrial engineering models without compromise to quality.",
+                "sections": [
+                    {
+                        "listItems": [
+                            {
+                                "mainItem": "PCBA through System Integration",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "3 SMT Panasonic Lines",
+                                "nestedList": [
+                                    "One Dedicated Prototype Line"
+                                ]
+                            },
+                            {
+                                "mainItem": "State of the Art Equipment",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Top of the Line Features and Capabilities",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Conformal Coating",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "J-STD/IPC Compliance",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Well-Trained and Certified Production Personnel",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Very clean environment",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            "/images/qtp1.png", "/images/qtp2.png", "/images/qtp3.png", 
+                            "/images/qtp4.png", "/images/qtp5.png", "/images/qtp6.png"
+                        ],
+                        "footnote": ""
+                    }
+                ]
+            }
+        },
+        "SC": {
+            "serviceType": "Supply Chain",
+            "imagePath": "/images/supplyChain6.png",
+            "pathToSVG": "/svgs/box-seam-fill.svg",
+            "pageLink": "/services/supplyChain",
+            "content": {
+                "title": "Supply Chain",
+                "headline": "Material Quality with On-Time Delivery at Controlled Costs​",
+                "message": "Since the BOM is the top COGS item, Suba Technology treats it seriously to reduce risks from a quality, delivery and costs perspective.  We provide our OEM partners with the right solutions to ensure that their competitive edge is achieved, including Time-to-Market.​",
+                "sections": [
+                    {
+                        "listItems": [
+                            {
+                                "mainItem": "Sourcing",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Vertical Integration – Injection Molded Parts",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Material Planning",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "BOM Analysis",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Procurement",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Inventory Management",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Logistics",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            "/images/supplyChain5.png", "/images/supplyChain7.png", "/images/supplyChain2.png",
+                            "/images/supplyChain6.png", "/images/supplyChain4.png"
+                        ],
+                        "footnote": ""
+                    }
+                ]
+            }
+        },
+        "FILL": {
+            "serviceType": "Fulfillment",
+            "imagePath": "/images/fulfillment.png",
+            "pathToSVG": "/svgs/calendar-date.svg",
+            "pageLink": "/services/fulfillment",
+            "content": {
+                "title": "Fulfillment",
+                "headline": "On-time delivery of goods to end-customers at a sudden notice is essential to meeting complete satisfaction",
+                "message": "Our commitment to achieving customer satisfaction on quality and delivery against constant demand is suba technology’s daily goal.  Anything less is not acceptable.",
+                "sections": [
+                    {
+                        "listItems": [
+                            {
+                                "mainItem": "Finished Goods Inventory Management",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "EOQ Replenishment",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Order Processing",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Timely Shipments",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "EDI/ASN",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Inventory Security",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            "/images/fulfillment.png"
+                        ],
+                        "footnote": ""
+                    }
+                ]
+            }
+        },
+        "AS": {
+            "serviceType": "After-Sale Services",
+            "imagePath": "/images/aftermarket2.png",
+            "pathToSVG": "/svgs/tools.svg",
+            "pageLink": "/services/afterSaleServices",
+            "content": {
+                "title": "After-Sale Services",
+                "headline": "Extension of the products’ lifecycle is one of our capabilities for continuous customer service​",
+                "message": "Whether the programs are at high-mix-low-volume or low-mix-high volume, the focus remains the same timely and disciplined builds against industrial engineering models without compromise to quality.​",
+                "sections": [
+                    {
+                        "listItems": [
+                            {
+                                "mainItem": "Upgrades",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Refurbishment",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Repair",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Spare Parts Management",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            "/images/aftermarket1.png", "/images/aftermarket2.png"
+                        ],
+                        "footnote": ""
+                    }
+                ]
+            }
+        }
+    },
+    "industries": {
+        "IOT": {
+            "industryType": "Internet of Things (IoT)",
+            "imagePath": "/images/image010.png",
+            "pathToSVG": "/svgs/router.svg",
+            "pageLink": "#"
+        },
+        "CE": {
+            "industryType": "Consumer Electronics",
+            "imagePath": "/images/image012.png",
+            "pathToSVG": "/svgs/laptop.svg",
+            "pageLink": "#"
+        },
+        "RE": {
+            "industryType": "Renewable Energy",
+            "imagePath": "/images/image008.png",
+            "pathToSVG": "/svgs/sun-fill.svg",
+            "pageLink": "#"
+        },
+        "MD": {
+            "industryType": "Medical Devices",
+            "imagePath": "/images/image004.png",
+            "pathToSVG": "/svgs/heart-pulse-fill.svg",
+            "pageLink": "#"
+        },
+        "EV": {
+            "industryType": "Electric Vehicles",
+            "imagePath": "/images/image003.png",
+            "pathToSVG": "/svgs/ev-front-fill.svg",
+            "pageLink": "#"
+        },
+        "AD": {
+            "industryType": "Aerospace and Defense",
+            "imagePath": "/images/image006.png",
+            "pathToSVG": "/svgs/airplane-engines-fill.svg",
+            "pageLink": "#"
+        }
+    },
+    "personnel": [
+        {
+            "fullName": "Rick Suba",
+            "role": "Founder and CEO",
+            "description": "",
+            "imagePath": "/images/image032.png"
+        },
+        {
+            "fullName": "Alex Obice",
+            "role": "Vice President and COO",
+            "description": "",
+            "imagePath": "/images/image034.png"
+        }
+    ]
+}
