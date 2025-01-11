@@ -397,6 +397,14 @@ textarea.form-control {
     .country-select {
         max-width: 100%;
     }
+    
+    .img-container {
+        height: auto;
+    }
+
+    .img-text {
+        min-height: 100%;
+    }
 }
 
 /* for screens up to medium */
@@ -417,14 +425,6 @@ textarea.form-control {
     .contact-footer > .address .d-flex,
     .contact-footer > .socials {
         justify-content: center;
-    }
-
-    .img-container {
-        height: auto;
-    }
-
-    .img-text {
-        min-height: 100%;
     }
 }
 
