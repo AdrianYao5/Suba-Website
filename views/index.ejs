@@ -10,17 +10,18 @@
                 </div>
             </div>
         </div>
-
-        <div class="row pb-lg-5 pb-0">
-            <div class="col-12 col-lg-5 align-self-center">
-                <div class="container-fluid p-5 mb-lg-0 mb-5">
+    </div>
+    <div class="text-light text-center">
+        <div class="row gx-lg-3 mx-0">
+            <div class="col-12 col-lg-5">
+                <div class="p-4 mb-lg-0 mb-5">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <h1 class="display-4 fw-lighter mb-3">Key Services</h1>
                         <p class="fw-lighter lead">
-                            Suba Technology’s technical staff has been serving the industries for over 25 plus years and 
-                            continue to learn new solutions to be in constant parallel with the ever changing world of 
-                            innovations. Our talented staff is fully committed to meet and understand the 
-                            customers' needs. We will be their partner in their never-ending quest for quality, 
+                            Suba Technology’s technical staff has been serving the industries for over 25 plus years and
+                            continue to learn new solutions to be in constant parallel with the ever changing world of
+                            innovations. Our talented staff is fully committed to meet and understand the
+                            customers' needs. We will be their partner in their never-ending quest for quality,
                             competitiveness, and profitability.
                         </p>
                         <a class="btn btn-lg btn-outline-light" href="/services">Learn More ...</a>
@@ -28,34 +29,35 @@
                 </div>
             </div>
             <div class="col-12 col-lg-7 feature-block">
-                <div class="container-fluid">
-                    <% 
-                    if(locals.serviceList) { 
-                        const serviceList = locals.serviceList;
-                    %>
-                    <div class="row gx-md-2 gx-lg-4 gx-0 gy-5 mini-features justify-content-center">
-                        <% for (const serviceName in serviceList) { %>
-                        <div class="col-6 col-md-4">
-                            <a class="card-link" href="<%= serviceList[serviceName].pageLink %>">
-                                <div class="card-container">
-                                    <div class="card border-light-subtle">
-                                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                            <object class="service-svg" type="image/svg+xml" data="<%= serviceList[serviceName].pathToSVG %>"></object>
-                                            <p class="fw-bold mt-3"><%= serviceList[serviceName].serviceType %></p>
+                <div class="p-3">
+                    <% if(locals.serviceList) { const serviceList=locals.serviceList; %>
+                        <div class="row gx-md-2 gx-lg-4 gx-0 gy-5 mini-features justify-content-center">
+                            <% for (const serviceName in serviceList) { %>
+                                <div class="col-6 col-md-4">
+                                    <a class="card-link" href="<%= serviceList[serviceName].pageLink %>">
+                                        <div class="card-container">
+                                            <div class="card border-light-subtle">
+                                                <div
+                                                    class="card-body d-flex flex-column justify-content-center align-items-center">
+                                                    <object class="service-svg" type="image/svg+xml"
+                                                        data="<%= serviceList[serviceName].pathToSVG %>"></object>
+                                                    <p class="fw-bold mt-3">
+                                                        <%= serviceList[serviceName].serviceType %>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card card-shadow">
+                                                <div class="card-body"></div>
+                                            </div>
+                                            <div class="card card-shadow-2">
+                                                <div class="card-body"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card card-shadow">
-                                        <div class="card-body"></div>
-                                    </div>
-                                    <div class="card card-shadow-2">
-                                        <div class="card-body"></div>
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <% } %>
                         </div>
                         <% } %>
-                    </div>
-                    <% } %>
                 </div>
             </div>
         </div>
