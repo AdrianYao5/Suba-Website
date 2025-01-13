@@ -31,8 +31,12 @@
     height: var(--navbar-height);
 }
 
-.page-navbar > .navbar, .page-navbar .navbar-brand > img {
+.page-navbar > .navbar {
     height: 100%;
+}
+
+.page-navbar .navbar-brand > img {
+    height: calc(var(--navbar-height) - 0.5rem);
 }
 
 .page-navbar .navbar-toggler-icon {
