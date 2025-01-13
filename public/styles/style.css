@@ -406,14 +406,6 @@ textarea.form-control {
 
 /* for screens up to medium */
 @media only screen and (max-width: 767px) {
-    .page-navbar {
-        height: auto;
-    }
-    
-    .page-navbar > .navbar {
-        height: 100%;
-    }
-
     .features .card {
         width: 26rem;
     }
