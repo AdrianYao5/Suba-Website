@@ -27,11 +27,11 @@
     color: #fff;
 }
 
-.page-navbar, .navbar-brand {
+.page-navbar {
     height: var(--navbar-height);
 }
 
-.page-navbar > .navbar {
+.page-navbar > .navbar, .page-navbar .navbar-brand > img {
     height: 100%;
 }
 
