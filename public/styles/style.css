@@ -31,10 +31,8 @@
     height: var(--navbar-height);
 }
 
-.page-navbar > .navbar {
+.page-navbar > .navbar, .page-navbar > .navbar > div {
     height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 .page-navbar .navbar-toggler-icon {
