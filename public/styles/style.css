@@ -334,7 +334,7 @@ textarea.form-control {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr);
-    height: 700px;
+    height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -353,7 +353,7 @@ textarea.form-control {
 
 .img-text {
     grid-area: 1 / 1;
-    min-height: 70vh;
+    height: 700px;
     width: 100%;
     z-index: 1;
 }
@@ -378,10 +378,6 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 1199px) {
-    .img-container {
-        height: auto;
-    }
-
     .img-text {
         height: 100%;
     }
