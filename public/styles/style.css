@@ -334,7 +334,8 @@ textarea.form-control {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr);
-    height: 800px;
+    max-height: 600px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
