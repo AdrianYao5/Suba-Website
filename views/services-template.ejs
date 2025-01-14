@@ -17,7 +17,7 @@ if(locals.serviceContent) {
     <div class="text-light">
         <div class="container p-5">
             <h3 class="display-5 fw-bold mb-4"><%= serviceContent.headline %>​</h3>
-            <p class="fw-lighter fs-5"><%= serviceContent.message %>​</p>
+            <p class="fw-lighter fs-4"><%= serviceContent.message %>​</p>
         </div>
     </div>
     <% for (let k = 0; k < serviceContent.sections.length; k++) { %>
@@ -33,7 +33,7 @@ if(locals.serviceContent) {
 
                     if (Array.isArray(listContents) && listContents.length > 0) { 
                 %>
-                    <ul class="fs-5">
+                    <ul class="fs-4">
                         <% for (let i = 0; i < listContents.length; i++) { %>
                         <li>
                             <%= listContents[i].mainItem %>
