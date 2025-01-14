@@ -355,7 +355,7 @@ textarea.form-control {
 
 .img-text {
     grid-area: 1 / 1;
-    min-height: 700px;
+    min-height: 35vh;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -378,12 +378,6 @@ textarea.form-control {
     justify-content: space-between;
     align-items: center;
     gap: 0;
-}
-
-@media only screen and (max-width: 1199px) {
-    .img-text {
-        height: 100%;
-    }
 }
 
 /* for screens up to medium */
