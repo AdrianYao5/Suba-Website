@@ -29,11 +29,10 @@
                 </div>
 
                 <div class="text-light blue-bg-2">
-                    <div class="row g-0">
-                        <div class="col-12 col-lg-5 align-self-center">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-12 col-lg-5 <% if (k % 2 === 1) { %>order-lg-last<% } %>">
                             <div class="p-5 my-auto">
-                                <% if (Array.isArray(listContents) && listContents.length> 0) {
-                                    %>
+                                <% if (Array.isArray(listContents) && listContents.length> 0) { %>
                                     <ul class="fs-4">
                                         <% for (let i=0; i < listContents.length; i++) { %>
                                             <li>
@@ -53,14 +52,16 @@
                                             </li>
                                             <% } %>
                                     </ul>
-                                    <% if (footnote !=="" ) { %>
-                                        <p class="mt-4 fs-6 fw-lighter">
-                                            <%= footnote %>
-                                        </p>
-                                        <% } } %>
+                                    <% } %>
+                                        <% if (footnote !=="" ) { %>
+                                            <p class="mt-4 fs-6 fw-lighter">
+                                                <%= footnote %>
+                                            </p>
+
+                                            <% } %>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-7">
+                        <div class="col-12 col-lg-7 <% if (k % 2 === 1) { %>order-lg-first<% } %>">
                             <% if(Array.isArray(galleryImages)) { %>
                                 <div class="row g-0 image-gallery align-items-center">
                                     <% if(galleryImages.length < 2) { %>
@@ -88,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <% } %>
+            <% } %>
                     <div class="text-light text-center blue-bg">
                         <div class="container p-5">
                             <h1 class="display-5 fw-bold my-5">Discover more information about this service:</h1>
