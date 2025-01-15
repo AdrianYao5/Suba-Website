@@ -1,103 +1,100 @@
-<% 
-if(locals.serviceContent) { 
-    const serviceContent = locals.serviceContent;
-%>
-<%- include("partials/header.ejs", { pageTitle: serviceContent.title }); %>
-<main class="comfortaa page-content">
-    <div class="text-light text-center">
-        <div class="img-container">
-            <img class="img-background" src="/images/image043.png">
-            <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
-                <div class="container p-5">
-                    <h1 class="display-3 fw-bold text-start"><%= serviceContent.title %></h1>
+<% if(locals.serviceContent) { const serviceContent=locals.serviceContent; %>
+    <%- include("partials/header.ejs", { pageTitle: serviceContent.title }); %>
+        <main class="comfortaa page-content">
+            <div class="text-light text-center">
+                <div class="img-container">
+                    <img class="img-background" src="/images/image043.png">
+                    <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
+                        <div class="container p-5">
+                            <h1 class="display-3 fw-bold text-start">
+                                <%= serviceContent.title %>
+                            </h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="text-light">
-        <div class="container p-5">
-            <h3 class="display-5 fw-bold mb-4"><%= serviceContent.headline %>​</h3>
-            <p class="fw-lighter fs-4"><%= serviceContent.message %>​</p>
-        </div>
-    </div>
-    <% for (let k = 0; k < serviceContent.sections.length; k++) { %>
-    <div class="text-light blue-bg-2">
-        <div class="row g-0">
-            <div class="col-12 col-lg-5 align-self-center">
-                <div class="p-5 my-auto">
-                <% 
-                    let currentSection = serviceContent.sections[k];
-                    let listContents = currentSection.listItems;
-                    let galleryImages = currentSection.imagePaths;
-                    let footnote = currentSection.footnote;
+            <% for (let k=0; k < serviceContent.sections.length; k++) { let currentSection=serviceContent.sections[k];
+                let headline=currentSection.headline; let message=currentSection.message; let
+                listContents=currentSection.listItems; let galleryImages=currentSection.imagePaths; let
+                footnote=currentSection.footnote; %>
+                <div class="text-light">
+                    <div class="container p-5">
+                        <h3 class="display-5 fw-bold mb-4">
+                            <%= headline %>​
+                        </h3>
+                        <p class="fw-lighter fs-4">
+                            <%= message %>​
+                        </p>
+                    </div>
+                </div>
 
-                    if (Array.isArray(listContents) && listContents.length > 0) { 
-                %>
-                    <ul class="fs-4">
-                        <% for (let i = 0; i < listContents.length; i++) { %>
-                        <li>
-                            <%= listContents[i].mainItem %>
-                            <% 
-                            let nestedListContent = listContents[i].nestedList;
-                            if (Array.isArray(nestedListContent) && nestedListContent.length > 0) { 
-                            %>
-                            <ul>
-                                <% for (let j = 0; j < nestedListContent.length; j++) { %>
-                                    <li><%= nestedListContent[j] %></li>
+                <div class="text-light blue-bg-2">
+                    <div class="row g-0">
+                        <div class="col-12 col-lg-5 align-self-center">
+                            <div class="p-5 my-auto">
+                                <% if (Array.isArray(listContents) && listContents.length> 0) {
+                                    %>
+                                    <ul class="fs-4">
+                                        <% for (let i=0; i < listContents.length; i++) { %>
+                                            <li>
+                                                <%= listContents[i].mainItem %>
+                                                    <% let nestedListContent=listContents[i].nestedList; if
+                                                        (Array.isArray(nestedListContent) && nestedListContent.length>
+                                                        0) {
+                                                        %>
+                                                        <ul>
+                                                            <% for (let j=0; j < nestedListContent.length; j++) { %>
+                                                                <li>
+                                                                    <%= nestedListContent[j] %>
+                                                                </li>
+                                                                <% } %>
+                                                        </ul>
+                                                        <% } %>
+                                            </li>
+                                            <% } %>
+                                    </ul>
+                                    <% if (footnote !=="" ) { %>
+                                        <p class="mt-4 fs-6 fw-lighter">
+                                            <%= footnote %>
+                                        </p>
+                                        <% } } %>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <% if(Array.isArray(galleryImages)) { %>
+                                <div class="row g-0 image-gallery align-items-center">
+                                    <% if(galleryImages.length < 2) { %>
+                                        <div class="col-12">
+                                            <% for(let k=0; k < galleryImages.length; k++) { %>
+                                                <img class="img-fluid float-end" src="<%= galleryImages[k] %>">
+                                                <% } %>
+                                        </div>
+                                        <% } else { let midpoint=Math.floor(galleryImages.length / 2); let
+                                            galleryLeft=galleryImages.slice(0, midpoint); let
+                                            galleryRight=galleryImages.slice(midpoint, galleryImages.length); %>
+                                            <div class="col-6">
+                                                <% for(let i=0; i < galleryLeft.length; i++) { %>
+                                                    <img class="img-fluid float-end" src="<%= galleryLeft[i] %>">
+                                                    <% } %>
+                                            </div>
+                                            <div class="col-6">
+                                                <% for(let j=0; j < galleryRight.length; j++) { %>
+                                                    <img class="img-fluid float-start" src="<%= galleryRight[j] %>">
+                                                    <% } %>
+                                            </div>
+                                            <% } %>
+                                </div>
                                 <% } %>
-                            </ul>
-                            <% } %>
-                        </li>
-                        <% } %>
-                    </ul>
-                    <% if (footnote !== "") { %>
-                    <p class="mt-4 fs-6 fw-lighter"><%= footnote %></p>
-                <% 
-                        }
-                    } 
-                %>
-                </div>
-            </div>
-            <div class="col-12 col-lg-7">
-                <% if(Array.isArray(galleryImages)) { %>
-                <div class="row g-0 image-gallery align-items-center">
-                    <% if(galleryImages.length < 2) { %>
-                    <div class="col-12">
-                        <% for(let k = 0; k < galleryImages.length; k++) { %>
-                        <img class="img-fluid float-end" src="<%= galleryImages[k] %>">
-                        <% } %>
+                        </div>
                     </div>
-                    <% 
-                    } 
-                    else {
-                        let midpoint = Math.floor(galleryImages.length / 2);
-                        let galleryLeft = galleryImages.slice(0, midpoint);
-                        let galleryRight = galleryImages.slice(midpoint, galleryImages.length);
-                    %>
-                    <div class="col-6">
-                        <% for(let i = 0; i < galleryLeft.length; i++) { %>
-                        <img class="img-fluid float-end" src="<%= galleryLeft[i] %>">
-                        <% } %>
-                    </div>
-                    <div class="col-6">
-                        <% for(let j = 0; j < galleryRight.length; j++) { %>
-                        <img class="img-fluid float-start" src="<%= galleryRight[j] %>">
-                        <% } %>
-                    </div>
-                    <% } %>
                 </div>
                 <% } %>
-            </div>
-        </div>
-    </div>
-    <% } %>
-    <div class="text-light text-center blue-bg">
-        <div class="container p-5">
-            <h1 class="display-5 fw-bold my-5">Discover more information about this service:</h1>
-            <a class="btn btn-lg btn-light text-blue" href="/contact">Get Started</a>
-        </div>
-    </div>
-</main>
-<%- include("partials/footer.ejs"); %>
-<% } %>
-
+                    <div class="text-light text-center blue-bg">
+                        <div class="container p-5">
+                            <h1 class="display-5 fw-bold my-5">Discover more information about this service:</h1>
+                            <a class="btn btn-lg btn-light text-blue" href="/contact">Get Started</a>
+                        </div>
+                    </div>
+        </main>
+        <%- include("partials/footer.ejs"); %>
+            <% } %>
