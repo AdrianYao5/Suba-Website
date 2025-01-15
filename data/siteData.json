@@ -133,6 +133,45 @@
                             "/images/vae5.png", "/images/vae4.png", "/images/vae6.png"
                         ],
                         "footnote": ""
+                    },
+                    {
+                        "headline": "We can turn your concept into reality.​",
+                        "message": "Our Design Services can help transform your ideas into results.  Through a closed-knit collaboration, we assist in the development of your concept towards a product for the required time-to-market.​",
+                        "listItems": [
+                            {
+                                "mainItem": "ODM – Original Design Manufacturing",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "JDM – Joint Design Manufacturing",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Test Development – HW & SW",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "PCB & PCBA Design",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Industrial Design (Mechanical)",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Mold Design and Fabrication",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Packaging Design",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            "/images/vave1.png", "/images/vave3.png", "/images/vave5.png", 
+                            "/images/vave2.png", "/images/vave4.png", "/images/vave6.png"
+                        ],
+                        "footnote": ""
                     }
                 ]
             }
