@@ -23,45 +23,25 @@
     </div>
     <% 
         let introductionImages = [
-            "/images/image001.png", "/images/image029.png", "/images/image018.png", 
-            "/images/image037.png", "/images/image031.png"
+            "/images/qtp1.png", "/images/image029.png", "/images/image018.png", "/images/image031.png"
         ];
         let valuesImages = [
             "/images/image024.png", "/images/image039.png", "/images/aftermarket1.png",
             "/images/image019.png", "/images/image040.png", "/images/fulfillment.png"
         ];
     %>
-    <div class="row g-0 overflow-hidden">
+    <div class="row g-0 blue-bg-2">
         <div class="col-12 col-lg-7">
-            <div class="row g-0 image-gallery bg-white">
-                <% if(introductionImages.length < 2) { %>
-                <div class="col-12">
-                    <% for(let k = 0; k < introductionImages.length; k++) { %>
-                    <img src="<%= introductionImages[k] %>">
-                    <% } %>
-                </div>
-                <% 
-                } 
-                else {
-                    let midpoint = Math.floor(introductionImages.length / 2);
-                    let galleryLeft = introductionImages.slice(0, midpoint);
-                    let galleryRight = introductionImages.slice(midpoint, introductionImages.length);
-                %>
-                <div class="col-6">
-                    <% for(let i = 0; i < galleryLeft.length; i++) { %>
-                    <img src="<%= galleryLeft[i] %>">
-                    <% } %>
-                </div>
-                <div class="col-6">
-                    <% for(let j = 0; j < galleryRight.length; j++) { %>
-                    <img src="<%= galleryRight[j] %>">
-                    <% } %>
-                </div>
+            <div class="image-gallery">
+                <% for(let k = 0; k < introductionImages.length; k++) { %>
+                    <div class="d-flex <% if(k % 2===0) { %>justify-content-end<% } %>">
+                        <img class="img-fluid" src="<%= introductionImages[k] %>">
+                    </div>
                 <% } %>
             </div>
         </div>
         <div class="col-12 col-lg-5">
-            <div class="text-light text-start h-100 blue-bg-2">
+            <div class="text-light text-start h-100">
                 <div class="container p-5">
                     <h1 class="display-5 fw-bold my-4">Introduction</h1>
                     <p class="lead my-4">
@@ -74,37 +54,18 @@
         </div>
     </div>
 
-    <div class="row g-0 overflow-hidden">
+    <div class="row g-0 blue-bg">
         <div class="col-12 col-lg-7 order-lg-last">
-            <div class="row g-0 image-gallery bg-white">
-                <% if(valuesImages.length < 2) { %>
-                <div class="col-12">
-                    <% for(let k = 0; k < valuesImages.length; k++) { %>
-                    <img src="<%= valuesImages[k] %>">
-                    <% } %>
-                </div>
-                <% 
-                } 
-                else {
-                    let midpoint = Math.floor(valuesImages.length / 2);
-                    let galleryLeft = valuesImages.slice(0, midpoint);
-                    let galleryRight = valuesImages.slice(midpoint, valuesImages.length);
-                %>
-                <div class="col-6">
-                    <% for(let i = 0; i < galleryLeft.length; i++) { %>
-                    <img src="<%= galleryLeft[i] %>">
-                    <% } %>
-                </div>
-                <div class="col-6">
-                    <% for(let j = 0; j < galleryRight.length; j++) { %>
-                    <img src="<%= galleryRight[j] %>">
-                    <% } %>
-                </div>
+            <div class="image-gallery">
+                <% for(let k = 0; k < valuesImages.length; k++) { %>
+                    <div class="d-flex <% if(k % 2===0) { %>justify-content-end<% } %>">
+                        <img class="img-fluid" src="<%= valuesImages[k] %>">
+                    </div>
                 <% } %>
             </div>
         </div>
         <div class="col-12 col-lg-5 order-lg-first">
-            <div class="text-light text-start h-100 blue-bg">
+            <div class="text-light text-start h-100">
                 <div class="container p-5">
                     <h1 class="display-5 fw-bold my-4">Our Values</h1>
                     <h3 class="fw-bold fs-4 my-3">Continuous Investment in Equipment, People and Process</h3>
