@@ -3,7 +3,7 @@
         <main class="comfortaa page-content">
             <div class="text-light text-center">
                 <div class="img-container">
-                    <img class="img-background" src="/images/image043.png">
+                    <img class="img-background" src="/images/image015.png">
                     <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
                         <div class="container p-5">
                             <h1 class="display-3 fw-bold text-start">
@@ -63,33 +63,18 @@
                         </div>
                         <div class="col-12 col-lg-7 <% if (k % 2 === 1) { %>order-lg-first<% } %>">
                             <% if(Array.isArray(galleryImages)) { %>
-                                <div class="row g-0 image-gallery align-items-center">
-                                    <% if(galleryImages.length < 2) { %>
-                                        <div class="col-12">
-                                            <% for(let k=0; k < galleryImages.length; k++) { %>
-                                                <img class="img-fluid float-end" src="<%= galleryImages[k] %>">
-                                                <% } %>
+                                <div class="image-gallery">
+                                    <% for(let k=0; k < galleryImages.length; k++) { %>
+                                        <div class="d-flex <% if(k % 2===0) { %>justify-content-end<% } %>">
+                                            <img class="img-fluid" src="<%= galleryImages[k] %>">
                                         </div>
-                                        <% } else { let midpoint=Math.floor(galleryImages.length / 2); let
-                                            galleryLeft=galleryImages.slice(0, midpoint); let
-                                            galleryRight=galleryImages.slice(midpoint, galleryImages.length); %>
-                                            <div class="col-6">
-                                                <% for(let i=0; i < galleryLeft.length; i++) { %>
-                                                    <img class="img-fluid float-end" src="<%= galleryLeft[i] %>">
-                                                    <% } %>
-                                            </div>
-                                            <div class="col-6">
-                                                <% for(let j=0; j < galleryRight.length; j++) { %>
-                                                    <img class="img-fluid float-start" src="<%= galleryRight[j] %>">
-                                                    <% } %>
-                                            </div>
-                                            <% } %>
+                                        <% } %>
                                 </div>
                                 <% } %>
                         </div>
                     </div>
                 </div>
-            <% } %>
+                <% } %>
                     <div class="text-light text-center blue-bg">
                         <div class="container p-5">
                             <h1 class="display-5 fw-bold my-5">Discover more information about this service:</h1>
