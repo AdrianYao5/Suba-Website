@@ -311,10 +311,6 @@ textarea.form-control {
     background-color: var(--dark-bg-transparent);
 }
 
-.contact-info {
-    width: 100%;
-}
-
 .contact-footer > .address, 
 .contact-footer > .address .d-flex {
     justify-content: start;
