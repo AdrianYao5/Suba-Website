@@ -64,9 +64,9 @@
                         <div class="col-12 col-lg-7 <% if (k % 2 === 1) { %>order-lg-first<% } %>">
                             <% if(Array.isArray(galleryImages)) { %>
                                 <div class="image-gallery">
-                                    <% for(let k=0; k < galleryImages.length; k++) { %>
-                                        <div class="d-flex <% if(k % 2===0) { %>justify-content-end<% } %>">
-                                            <img class="img-fluid" src="<%= galleryImages[k] %>">
+                                    <% let lastPanoramaIndex = 0; for(let k=0; k < galleryImages.length; k++) { %>
+                                        <div class="d-flex <% if(galleryImages[k].isPanorama) { lastPanoramaIndex = k + 1; %>panorama<% } else if((lastPanoramaIndex + k) % 2===0) { %>justify-content-end<% } %>">
+                                            <img class="img-fluid" src="<%= galleryImages[k].file %>">
                                         </div>
                                         <% } %>
                                 </div>
