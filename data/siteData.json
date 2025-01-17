@@ -1,107 +1,63 @@
 {
     "services": {
-        "QTP": {
-            "serviceType": "Quick-Turn Prototype",
-            "imagePath": "/images/qtp6.png",
-            "pathToSVG": "/svgs/robot.svg",
-            "pageLink": "/services/quickTurnPrototype",
-            "content": {
-                "title": "Quick-Turn Prototype",
-                "sections": [
-                    {
-                        "headline": "Sensitivity to our customers’ designs and proof of concepts is what matters. We strive to do things right the first time​",
-                        "message": "Suba technology prioritizes quality performance against industry standards and fundamentals to deliver products that demand quick turnaround times.",
-                        "listItems": [
-                            {
-                                "mainItem": "Quick-Turn Delivery *",
-                                "nestedList": [
-                                    "12 hours turn", "2 Days Turn", "3 Days Turn", 
-                                    "5 Days Turn", "7 Days Turn – Standard for FAB and Assembly"
-                                ]
-                            },
-                            {
-                                "mainItem": "DFM (Recommended)",
-                                "nestedList": []
-                            },
-                            {
-                                "mainItem": "Flying Probe Test (Recommended)",
-                                "nestedList": []
-                            }
-
-                        ],
-                        "imagePaths": [
-                            "/images/qtp1.png", "/images/qtp2.png", "/images/qtp3.png", 
-                            "/images/qtp4.png", "/images/qtp5.png", "/images/qtp6.png"
-                        ],
-                        "footnote": "* Quick-Turn Delivery starts after all components are in-house and kitted."
-                    }
-                ]
-            }
-        },
-        "QA": {
-            "serviceType": "Quality Assurance",
-            "imagePath": "/images/qa3.png",
-            "pathToSVG": "/svgs/clipboard2-check-fill.svg",
-            "pageLink": "/services/qualityAssurance",
-            "content": {
-                "title": "Quality Assurance",
-                "sections": [
-                    {
-                        "headline": "Ensuring adherence to the quality policy and quality manual is our everyday way of life​",
-                        "message": "Suba Technology's commitment to quality is reflected in its history of zero ppm performance to-date and continual investment in advanced equipment and talented trained personnel. The company is dedicated to delivering the best value to its customers through excellence in service, product quality and continuous improvements.​",
-                        "listItems": [
-                            {
-                                "mainItem": "QMS",
-                                "nestedList": [
-                                    "ISO 9001",
-                                    "ISO 14001",
-                                    "ISO 13485 (Q1 2025)",
-                                    "IATF 16949 (Q3 2025)",
-                                    "AS 9100D (2026)"
-                                ]
-                            },
-                            {
-                                "mainItem": "Top of the line inspection equipment",
-                                "nestedList": []
-                            },
-                            {
-                                "mainItem": "APQP",
-                                "nestedList": []
-                            },
-                            {
-                                "mainItem": "PPAP",
-                                "nestedList": []
-                            },
-                            {
-                                "mainItem": "Geneology / Traceability",
-                                "nestedList": []
-                            }
-                        ],
-                        "imagePaths": [
-                            "/images/spi+aoi.png", "/images/aoiImage.png", "/images/qa3.png", "/images/qa4.png", "/images/xrayMachine.png", "/images/xrayImage.png"
-                        ],
-                        "footnote": ""
-                    }
-                ]
-            }
-        },
         "VAE": {
-            "serviceType": "Value-Add Engineering",
-            "imagePath": "/images/vae2.png",
+            "serviceType": "Value-Add Value Engineering",
+            "imagePath": "/images/vave2.png",
             "pathToSVG": "/svgs/person-fill-gear.svg",
             "pageLink": "/services/valueAddEngineering",
             "content": {
-                "title": "Value-Add Engineering",
+                "title": "Value-Add Value Engineering",
                 "sections": [
+                    {
+                        "headline": "We can turn your concept into reality.​",
+                        "message": "Our Design Services can help transform your ideas into results.  Through a closed-knit collaboration, we assist in the development of your concept towards a product for the required time-to-market.​",
+                        "listItems": [
+                            {
+                                "mainItem": "ODM – Original Design Manufacturing",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "JDM – Joint Design Manufacturing",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "PCB & PCBA Design",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Industrial Design (Mechanical)",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Test Development – HW & SW",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Mold Design and Fabrication",
+                                "nestedList": []
+                            },
+                            {
+                                "mainItem": "Packaging Design",
+                                "nestedList": []
+                            }
+                        ],
+                        "imagePaths": [
+                            { "file": "/images/vave1.png", "isPanorama": false },
+                            { "file": "/images/vave3.png", "isPanorama": false },
+                            { "file": "/images/vave5.png", "isPanorama": false },
+                            { "file": "/images/vave2.png", "isPanorama": false },
+                            { "file": "/images/vave4.png", "isPanorama": false },
+                            { "file": "/images/vave6.png", "isPanorama": false }
+                        ],
+                        "footnote": ""
+                    },
                     {
                         "headline": "Design validation for defect-free manufacturing of products​",
                         "message": "It’s all about the engineering talent in manufacturing, test and reliability that counts. Top of the line equipment and tools complement the effectiveness of Suba Technology’s advanced engineering.​",
                         "listItems": [
                             {
-                                "mainItem": "VAVe – Value-Add Value-Engineering",
+                                "mainItem": "Design for Excellence",
                                 "nestedList": [
-                                    "PCB Design",
-                                    "Test Development – HW/SW​",
                                     "Design for Manufacturing (DFM)​",
                                     "Design for Testability (DFT)",
                                     "Design for Assembly (DFA)"
@@ -129,47 +85,99 @@
                             }
                         ],
                         "imagePaths": [
-                            "/images/vae1.png", "/images/vae2.png", "/images/vae3.png", 
-                            "/images/vae5.png", "/images/vae4.png", "/images/vae6.png"
+                            { "file": "/images/vae2.png", "isPanorama": false }, 
+                            { "file": "/images/vae6.png", "isPanorama": false }, 
+                            { "file": "/images/vae4.png", "isPanorama": false },
+                            { "file": "/images/vae5.png", "isPanorama": false }
                         ],
                         "footnote": ""
-                    },
+                    }
+                ]
+            }
+        },
+        "QTP": {
+            "serviceType": "Quick-Turn Prototype",
+            "imagePath": "/images/qtpNew.png",
+            "pathToSVG": "/svgs/robot.svg",
+            "pageLink": "/services/quickTurnPrototype",
+            "content": {
+                "title": "Quick-Turn Prototype",
+                "sections": [
                     {
-                        "headline": "We can turn your concept into reality.​",
-                        "message": "Our Design Services can help transform your ideas into results.  Through a closed-knit collaboration, we assist in the development of your concept towards a product for the required time-to-market.​",
+                        "headline": "Sensitivity to our customers’ designs and proof of concepts is what matters. We strive to do things right the first time​",
+                        "message": "Suba technology prioritizes quality performance against industry standards and fundamentals to deliver products that demand quick turnaround times.",
                         "listItems": [
                             {
-                                "mainItem": "ODM – Original Design Manufacturing",
+                                "mainItem": "Quick-Turn Delivery *",
+                                "nestedList": [
+                                    "12 hours turn", "2 Days Turn", "3 Days Turn", 
+                                    "5 Days Turn", "7 Days Turn – Standard for FAB and Assembly"
+                                ]
+                            },
+                            {
+                                "mainItem": "DFM (Recommended)",
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "JDM – Joint Design Manufacturing",
+                                "mainItem": "Flying Probe Test (Recommended)",
+                                "nestedList": []
+                            }
+
+                        ],
+                        "imagePaths": [
+                            { "file": "/images/qtp2.png", "isPanorama": false },
+                            { "file": "/images/qtpNew.png", "isPanorama": false }
+                        ],
+                        "footnote": "* Quick-Turn Delivery starts after all components are in-house and kitted."
+                    }
+                ]
+            }
+        },
+        "QA": {
+            "serviceType": "Quality Assurance",
+            "imagePath": "/images/qa4.png",
+            "pathToSVG": "/svgs/clipboard2-check-fill.svg",
+            "pageLink": "/services/qualityAssurance",
+            "content": {
+                "title": "Quality Assurance",
+                "sections": [
+                    {
+                        "headline": "Ensuring adherence to the quality policy and quality manual is our everyday way of life​",
+                        "message": "Suba Technology's commitment to quality is reflected in its history of zero ppm performance to-date and continual investment in advanced equipment and talented trained personnel. The company is dedicated to delivering the best value to its customers through excellence in service, product quality and continuous improvements.​",
+                        "listItems": [
+                            {
+                                "mainItem": "QMS",
+                                "nestedList": [
+                                    "ISO 9001",
+                                    "ISO 14001 (Q3 2025)",
+                                    "ISO 13485 (Q3 2025)",
+                                    "IATF 16949 (Q3 2025)",
+                                    "AS 9100D (Q3 2026)"
+                                ]
+                            },
+                            {
+                                "mainItem": "Top of the line inspection equipment",
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "Test Development – HW & SW",
+                                "mainItem": "APQP",
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "PCB & PCBA Design",
+                                "mainItem": "PPAP",
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "Industrial Design (Mechanical)",
-                                "nestedList": []
-                            },
-                            {
-                                "mainItem": "Mold Design and Fabrication",
-                                "nestedList": []
-                            },
-                            {
-                                "mainItem": "Packaging Design",
+                                "mainItem": "Geneology / Traceability",
                                 "nestedList": []
                             }
                         ],
                         "imagePaths": [
-                            "/images/vave1.png", "/images/vave3.png", "/images/vave5.png", 
-                            "/images/vave2.png", "/images/vave4.png", "/images/vave6.png"
+                            { "file": "/images/spi+aoi.png", "isPanorama": false },
+                            { "file": "/images/aoiImage.png", "isPanorama": false },
+                            { "file": "/images/xrayMachine.png", "isPanorama": false },
+                            { "file": "/images/xrayImage.png", "isPanorama": false },
+                            { "file": "/images/qa4.png", "isPanorama": false }
                         ],
                         "footnote": ""
                     }
@@ -178,7 +186,7 @@
         },
         "AMS": {
             "serviceType": "Advanced Manufacturing Services",
-            "imagePath": "/images/qtp4.png",
+            "imagePath": "/images/qtp1.png",
             "pathToSVG": "/svgs/cpu-fill.svg",
             "pageLink": "/services/advancedManufacturingServices",
             "content": {
@@ -211,7 +219,7 @@
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "J-STD/IPC Compliance",
+                                "mainItem": "IPC/J-STD Workmanship Compliance",
                                 "nestedList": []
                             },
                             {
@@ -224,8 +232,12 @@
                             }
                         ],
                         "imagePaths": [
-                            "/images/qtp1.png", "/images/qtp2.png", "/images/qtp3.png", 
-                            "/images/qtp4.png", "/images/qtp5.png", "/images/qtp6.png"
+                            { "file": "/images/equipmentPanorama.png", "isPanorama": true },
+                            { "file": "/images/qtp1.png", "isPanorama": false },
+                            { "file": "/images/machine1.png", "isPanorama": false },
+                            { "file": "/images/machine2.png", "isPanorama": false },
+                            { "file": "/images/machine3.png", "isPanorama": false },
+                            { "file": "/images/machine4.png", "isPanorama": false }
                         ],
                         "footnote": ""
                     }
@@ -234,7 +246,7 @@
         },
         "SC": {
             "serviceType": "Supply Chain",
-            "imagePath": "/images/supplyChain6.png",
+            "imagePath": "/images/supplyChain7.png",
             "pathToSVG": "/svgs/box-seam-fill.svg",
             "pageLink": "/services/supplyChain",
             "content": {
@@ -274,8 +286,11 @@
                             }
                         ],
                         "imagePaths": [
-                            "/images/supplyChain5.png", "/images/supplyChain7.png", "/images/supplyChain2.png",
-                            "/images/supplyChain6.png", "/images/supplyChain4.png"
+                            { "file": "/images/supplyChain5.png", "isPanorama": false },
+                            { "file": "/images/supplyChain7.png", "isPanorama": false },
+                            { "file": "/images/supplyChain2.png", "isPanorama": false },
+                            { "file": "/images/supplyChain6.png", "isPanorama": false },
+                            { "file": "/images/supplyChain4.png", "isPanorama": false }
                         ],
                         "footnote": ""
                     }
@@ -292,7 +307,7 @@
                 "sections": [
                     {
                         "headline": "On-time delivery of goods to end-customers at a sudden notice is essential to meeting complete satisfaction",
-                        "message": "Our commitment to achieving customer satisfaction on quality and delivery against constant demand is suba technology’s daily goal.  Anything less is not acceptable.",
+                        "message": "Our commitment to achieving customer satisfaction on quality and delivery against constant demand is Suba Technology’s daily goal.  Anything less is not acceptable.",
                         "listItems": [
                             {
                                 "mainItem": "Finished Goods Inventory Management",
@@ -320,7 +335,7 @@
                             }
                         ],
                         "imagePaths": [
-                            "/images/fulfillment.png"
+                            { "file": "/images/fullfillment.png", "isPanorama": true }
                         ],
                         "footnote": ""
                     }
@@ -328,16 +343,16 @@
             }
         },
         "AS": {
-            "serviceType": "After-Sale Services",
+            "serviceType": "After-Sales Services",
             "imagePath": "/images/aftermarket2.png",
             "pathToSVG": "/svgs/tools.svg",
             "pageLink": "/services/afterSaleServices",
             "content": {
-                "title": "After-Sale Services",
+                "title": "After-Sales Services",
                 "sections": [
                     {
                         "headline": "Extension of the products’ lifecycle is one of our capabilities for continuous customer service​",
-                        "message": "Whether the programs are at high-mix-low-volume or low-mix-high volume, the focus remains the same timely and disciplined builds against industrial engineering models without compromise to quality.​",
+                        "message": "Whether the programs are at high-mix-low-volume or low-mix-high volume, the focus remains the same on timely and disciplined builds against industrial engineering models without compromise to quality.​",
                         "listItems": [
                             {
                                 "mainItem": "Upgrades",
@@ -357,7 +372,8 @@
                             }
                         ],
                         "imagePaths": [
-                            "/images/aftermarket1.png", "/images/aftermarket2.png"
+                            { "file": "/images/aftermarket1.png", "isPanorama": false },
+                            { "file": "/images/aftermarket2.png", "isPanorama": false }
                         ],
                         "footnote": ""
                     }
