@@ -6,7 +6,7 @@
             <img class="img-background" src="/images/image015.png">
             <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
                 <div class="container p-5">
-                    <h1 class="display-4 fw-bold">INDUSTRIES</h1>
+                    <h1 class="display-4 fw-bold">Industries</h1>
                     <p class="fs-3 my-4">Suba Technology serves customers from the following industries:</p>
                 </div>
             </div>
@@ -25,9 +25,9 @@
                                 <div class="card-container">
                                     <div class="card border-light-subtle">
                                         <img class="card-img-top" src="<%= industriesList[industry].imagePath %>">
-                                        <div class="card-body my-3 d-flex flex-column justify-content-center align-items-center">
-                                            <object class="service-svg mb-3" type="image/svg+xml" data="<%= industriesList[industry].pathToSVG %>"></object>
-                                            <h2 class="fw-normal"><%= industriesList[industry].industryType %></h2>
+                                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                            <object class="service-svg mb-2" type="image/svg+xml" data="<%= industriesList[industry].pathToSVG %>"></object>
+                                            <h2 class="fw-normal fs-3"><%= industriesList[industry].industryType %></h2>
                                         </div>
                                     </div>
                                     <div class="card card-shadow">
