@@ -14,24 +14,24 @@
     <div id="aboutUs" class="text-light text-start">
         <div class="container p-5">
             <h1 class="display-4 fw-bold">About Us</h1>
-            <p class="lead my-4">
-                As a manufacturer of finished products and sub-assemblies for Medical, Telecommunications, 
+            <p class="lead my-4 fs-4">
+                As a service provider of sub-assemblies and finished products  for Medical, Telecommunications, 
                 IoT, Consumer Electronics, EV, Aerospace and Defense, we provide optimized solutions by using 
-                the latest technologies.
+                the latest technologies and talented personnel.
             </p>
         </div>
     </div>
     <% 
         let introductionImages = [
-            "/images/qtp1.png", "/images/image029.png", "/images/image018.png", "/images/image031.png"
+            "/images/qtp1.png", "/images/vae1.png", "/images/image018.png", "/images/qtp3.png"
         ];
         let valuesImages = [
-            "/images/image024.png", "/images/image039.png", "/images/aftermarket1.png",
-            "/images/image019.png", "/images/image040.png", "/images/fulfillment.png"
+            "/images/aftermarket1.png", "/images/image039.png", "/images/image040.png", 
+            "/images/image019.png", "/images/image024.png", "/images/fulfillment.png"
         ];
     %>
-    <div class="row g-0 align-items-center blue-bg-2">
-        <div class="col-12 col-lg-7">
+    <div class="row g-0 blue-bg-2">
+        <div class="col-12 col-lg-7 align-self-center">
             <div class="image-gallery">
                 <% for(let k = 0; k < introductionImages.length; k++) { %>
                     <div class="d-flex <% if(k % 2===0) { %>justify-content-end<% } %>">
@@ -41,10 +41,10 @@
             </div>
         </div>
         <div class="col-12 col-lg-5">
-            <div class="text-light text-start h-100">
+            <div class="text-light text-start">
                 <div class="container p-5">
                     <h1 class="display-5 fw-bold my-4">Introduction</h1>
-                    <p class="lead my-4">
+                    <p class="lead my-4 fs-4">
                         Suba Technology was founded in 2001 with the mission to provide high-quality, full-service 
                         contract manufacturing solutions. With a 60,000 square-foot facility and over 25 years of experience, 
                         Suba Technology continues to deliver innovation, superb quality, and outstanding customer service.
@@ -54,8 +54,8 @@
         </div>
     </div>
 
-    <div class="row g-0 align-items-center blue-bg">
-        <div class="col-12 col-lg-7 order-lg-last">
+    <div class="row g-0 blue-bg">
+        <div class="col-12 col-lg-7 align-self-center order-lg-last">
             <div class="image-gallery">
                 <% for(let k = 0; k < valuesImages.length; k++) { %>
                     <div class="d-flex <% if(k % 2===0) { %>justify-content-end<% } %>">
@@ -65,22 +65,22 @@
             </div>
         </div>
         <div class="col-12 col-lg-5 order-lg-first">
-            <div class="text-light text-start h-100">
+            <div class="text-light text-start">
                 <div class="container p-5">
                     <h1 class="display-5 fw-bold my-4">Our Values</h1>
-                    <h3 class="fw-bold fs-4 my-3">Continuous Investment in Equipment, People and Process</h3>
-                    <p class="my-4">
+                    <h3 class="fw-bold fs-4 my-3">Continuous Investment in People, Equipment, and Process</h3>
+                    <p class="my-4 fs-6">
                         In the last 5 years, we invested in modern equipment and people to keep up with the demanding market. 
                         We doubled our team of key personnel to better serve our customers.
                     </p>
                     <h3 class="fw-bold fs-4 my-3">Unwavering Commitment to Our Customers</h3>
-                    <p class="my-4">
+                    <p class="my-4 fs-6">
                         Our commitment to excellence brought our yield average and our on-time performance to at least 98%. 
                         Suba Technology will be able to sustain today and future needs of our customer with its quality yet 
                         affordable service.
                     </p>
-                    <h3 class="fw-bold fs-4 my-3">Facility and Manpower</h3>
-                    <p class="my-4">
+                    <h3 class="fw-bold fs-4 my-3">Facility and Personnel</h3>
+                    <p class="my-4 fs-6">
                         We are a privately owned company with approximately 30,000 square feet facility located in Fremont, California. 
                         Suba Technology is an IPC Class II and Class III Compliant, RoHS Compliant, ISO 9001:2015 Certified, 
                         and IPC-610 trained workforce.
@@ -101,7 +101,7 @@
         </div>
     </div>
 
-    <div class="text-light text-center feature-block">
+    <div class="text-light text-center feature-block leaders">
         <div class="row gx-md-2 gx-lg-4 gx-0 gy-5 features justify-content-center mx-auto">
             <% 
             if (locals.personnel && Array.isArray(locals.personnel)) {
