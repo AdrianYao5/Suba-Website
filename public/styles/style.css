@@ -22,6 +22,11 @@
     color: #0081AB;
 }
 
+.cookie-svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .contact-form button {
     background: var(--bg-blue-2);
     color: #fff;
@@ -403,6 +408,11 @@ textarea.form-control {
     gap: 0;
 }
 
+.cookie-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
 /* for screens up to medium */
 @media only screen and (max-width: 991px) {
     .industry-gallery {
@@ -419,13 +429,14 @@ textarea.form-control {
         bottom: 3.25rem;
     }
 
-    .footnote {
-        justify-content: center;
-        gap: 1rem;
-    }
-
     .country-select {
         max-width: 100%;
+    }
+
+    .footnote {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
     }
 }
 
