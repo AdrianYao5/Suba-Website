@@ -1,9 +1,9 @@
-<% if(locals.serviceContent) { const serviceContent=locals.serviceContent; %>
+<% if(locals.service) { const serviceContent=locals.service.content; %>
     <%- include("partials/header.ejs", { pageTitle: serviceContent.title }); %>
         <main class="comfortaa page-content">
             <div class="text-light text-center">
                 <div class="img-container">
-                    <img class="img-background" src="/images/image015.png">
+                    <img class="img-background" src="<%= locals.service.background %>">
                     <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
                         <div class="container p-5">
                             <h1 class="display-3 fw-bold text-start">
@@ -63,9 +63,11 @@
                         </div>
                         <div class="col-12 col-lg-7 <% if (k % 2 === 1) { %>order-lg-first<% } %>">
                             <% if(Array.isArray(galleryImages)) { %>
-                                <div class="image-gallery">
+                                <div class="row g-0 image-gallery">
                                     <% let lastPanoramaIndex = 0; for(let k=0; k < galleryImages.length; k++) { %>
-                                        <div class="d-flex <% if(galleryImages[k].isPanorama) { lastPanoramaIndex = k + 1; %>panorama<% } else if((lastPanoramaIndex + k) % 2===0) { %>justify-content-end<% } %>">
+                                        <div class="col-6 d-flex <% if(k % 2 !== 0) { %>
+                                            justify-content-start<% } else { if(k === galleryImages.length - 1) {%>
+                                                justify-content-center<%} else {%>justify-content-end<% }} %>">
                                             <img class="img-fluid" src="<%= galleryImages[k].file %>">
                                         </div>
                                         <% } %>
