@@ -2,7 +2,8 @@
     "services": {
         "VAE": {
             "serviceType": "Value-Add Value Engineering",
-            "imagePath": "/images/vave2.png",
+            "imagePath": "/images/vaveBackground.png",
+            "background": "/images/vaveBackground2.png",
             "pathToSVG": "/svgs/person-fill-gear.svg",
             "pageLink": "/services/valueAddEngineering",
             "content": {
@@ -97,7 +98,8 @@
         },
         "QTP": {
             "serviceType": "Quick-Turn Prototype",
-            "imagePath": "/images/qtpNew.png",
+            "imagePath": "/images/qtpBackground.png",
+            "background": "/images/qtpBackground.png",
             "pathToSVG": "/svgs/robot.svg",
             "pageLink": "/services/quickTurnPrototype",
             "content": {
@@ -136,6 +138,7 @@
         "QA": {
             "serviceType": "Quality Assurance",
             "imagePath": "/images/qa4.png",
+            "background": "/images/qaBackground.png",
             "pathToSVG": "/svgs/clipboard2-check-fill.svg",
             "pageLink": "/services/qualityAssurance",
             "content": {
@@ -187,6 +190,7 @@
         "AMS": {
             "serviceType": "Advanced Manufacturing Services",
             "imagePath": "/images/qtp1.png",
+            "background": "/images/equipmentPanorama.png",
             "pathToSVG": "/svgs/cpu-fill.svg",
             "pageLink": "/services/advancedManufacturingServices",
             "content": {
@@ -194,7 +198,7 @@
                 "sections": [
                     {
                         "headline": "Meeting commitments to customers’ delivery expectations at high quality levels​",
-                        "message": "Whether the programs are at high-mix-low-volume or low-mix-high volume, the focus remains the same for timely and disciplined builds against industrial engineering models without compromise to quality.",
+                        "message": "Whether the programs are at high-mix-low-volume or low-mix-high volume, the focus remains the same on timely and disciplined builds against industrial engineering models without compromise to quality.",
                         "listItems": [
                             {
                                 "mainItem": "PCBA through System Integration",
@@ -232,8 +236,7 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/equipmentPanorama.png", "isPanorama": true },
-                            { "file": "/images/qtp1.png", "isPanorama": false },
+                            { "file": "/images/qtp1.png", "isPanorama": true },
                             { "file": "/images/machine1.png", "isPanorama": false },
                             { "file": "/images/machine2.png", "isPanorama": false },
                             { "file": "/images/machine3.png", "isPanorama": false },
@@ -247,6 +250,7 @@
         "SC": {
             "serviceType": "Supply Chain",
             "imagePath": "/images/supplyChain7.png",
+            "background": "/images/supplyBackground.png",
             "pathToSVG": "/svgs/box-seam-fill.svg",
             "pageLink": "/services/supplyChain",
             "content": {
@@ -286,6 +290,7 @@
                             }
                         ],
                         "imagePaths": [
+                            { "file": "/images/inventory.png", "isPanorama": false },
                             { "file": "/images/supplyChain5.png", "isPanorama": false },
                             { "file": "/images/supplyChain7.png", "isPanorama": false },
                             { "file": "/images/supplyChain2.png", "isPanorama": false },
@@ -300,6 +305,7 @@
         "FILL": {
             "serviceType": "Fulfillment",
             "imagePath": "/images/fulfillment.png",
+            "background": "/images/fulfillment.png",
             "pathToSVG": "/svgs/calendar-date.svg",
             "pageLink": "/services/fulfillment",
             "content": {
@@ -335,7 +341,8 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/fullfillment.png", "isPanorama": true }
+                            { "file": "/images/aftermarket1.png", "isPanorama": false },
+                            { "file": "/images/fulfillment.png", "isPanorama": false }
                         ],
                         "footnote": ""
                     }
@@ -345,6 +352,7 @@
         "AS": {
             "serviceType": "After-Sales Services",
             "imagePath": "/images/aftermarket2.png",
+            "background": "/images/aftermarket2.png",
             "pathToSVG": "/svgs/tools.svg",
             "pageLink": "/services/afterSaleServices",
             "content": {
@@ -396,7 +404,7 @@
         },
         "RE": {
             "industryType": "Renewable Energy",
-            "imagePath": "/images/image008.png",
+            "imagePath": "/images/renewable.png",
             "pathToSVG": "/svgs/sun-fill.svg",
             "pageLink": "#"
         },
