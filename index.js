@@ -53,37 +53,37 @@ app.get("/services", (req, res) => {
 });
 
 app.get("/services/supplyChain", (req, res) => {
-  res.locals = { serviceContent: siteData.services["SC"].content };
+  res.locals = { service: siteData.services["SC"] };
   res.render("services-template.ejs");
 });
 
 app.get("/services/quickTurnPrototype", (req, res) => {
-  res.locals = { serviceContent: siteData.services["QTP"].content };
+  res.locals = { service: siteData.services["QTP"] };
   res.render("services-template.ejs");
 });
 
 app.get("/services/advancedManufacturingServices", (req, res) => {
-  res.locals = { serviceContent: siteData.services["AMS"].content };
+  res.locals = { service: siteData.services["AMS"] };
   res.render("services-template.ejs");
 });
 
 app.get("/services/qualityAssurance", (req, res) => {
-  res.locals = { serviceContent: siteData.services["QA"].content };
+  res.locals = { service: siteData.services["QA"] };
   res.render("services-template.ejs");
 });
 
 app.get("/services/valueAddEngineering", (req, res) => {
-  res.locals = { serviceContent: siteData.services["VAE"].content };
+  res.locals = { service: siteData.services["VAE"] };
   res.render("services-template.ejs");
 });
 
 app.get("/services/fulfillment", (req, res) => {
-  res.locals = { serviceContent: siteData.services["FILL"].content };
+  res.locals = { service: siteData.services["FILL"] };
   res.render("services-template.ejs");
 });
 
 app.get("/services/afterSaleServices", (req, res) => {
-  res.locals = { serviceContent: siteData.services["AS"].content };
+  res.locals = { service: siteData.services["AS"] };
   res.render("services-template.ejs");
 });
 
