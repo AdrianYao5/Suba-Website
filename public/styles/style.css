@@ -215,6 +215,7 @@ White carousel indicators
 }
 
 .features .card {
+    height: 25rem;
     width: 14.75rem;
 }
 
@@ -351,13 +352,12 @@ textarea.form-control {
 }
 
 .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 30vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.image-gallery .panorama {
-    grid-column: 1 / span 2;
+.image-gallery img {
+    height: 25vh;
 }
 
 .img-container {
