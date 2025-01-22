@@ -100,6 +100,14 @@ app.get("/careers", (req, res) => {
   res.render("careers.ejs");
 });
 
+app.get("/privacyPolicy", (req, res) => {
+  res.render("privacyPolicy.ejs");
+});
+
+app.get("/termsAndConditions", (req, res) => {
+  res.render("termsAndConditions.ejs");
+});
+
 app.get("/careers/jobOpenings", (req, res) => {
   res.locals = { 
     jobs: careersData.jobs, 
