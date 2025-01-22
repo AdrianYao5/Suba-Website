@@ -5,7 +5,7 @@
     --steel-blue: #08457b;
     --blue: #002387;
     --shadow-offset: 7px;
-    --dark-bg-transparent: rgba(0, 0, 0, 0.25);
+    --dark-bg-transparent: rgba(0, 0, 0, 0.15);
     --height-carousel: 750px;
     --height-gallery: 600px;
     --height-features: 500px;
@@ -18,7 +18,7 @@
     color: var(--steel-blue);
 }
 
-.nav .nav-link, .nav .dropdown-item{
+footer .nav-link, footer .dropdown-item{
     color: #0081AB;
 }
 
@@ -74,6 +74,11 @@
 .company-info svg {
     width: 4.75rem;
     height: 4.75rem;
+}
+
+.values svg {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .cnCarousel > .carousel-control-prev, 
@@ -216,7 +221,7 @@ White carousel indicators
 
 .features .card {
     height: 25rem;
-    width: 14.75rem;
+    width: 17.5rem;
 }
 
 .features .card > .card-body {
@@ -364,9 +369,9 @@ textarea.form-control {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr);
+    min-height: 50vh;
     height: auto;
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -375,6 +380,7 @@ textarea.form-control {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: 50% 50%;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -383,8 +389,7 @@ textarea.form-control {
 
 .img-text {
     grid-area: 1 / 1;
-    min-height: 35vh;
-    height: 100%;
+    height: auto;
     width: 100%;
     z-index: 1;
 }
@@ -413,6 +418,18 @@ textarea.form-control {
     height: 2.25rem;
 }
 
+@media only screen and (max-width: 1199px) {
+    .features .card {
+        width: 17.5rem;
+    }
+
+    .footnote {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
 /* for screens up to medium */
 @media only screen and (max-width: 991px) {
     .industry-gallery {
@@ -421,22 +438,12 @@ textarea.form-control {
         height: 50vh;
     }
 
-    .features .card {
-        width: 17.5rem;
-    }
-
     #imageCarousel > .carousel-indicators {
         bottom: 3.25rem;
     }
 
     .country-select {
         max-width: 100%;
-    }
-
-    .footnote {
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
     }
 }
 
