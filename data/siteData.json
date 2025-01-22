@@ -87,7 +87,6 @@
                         ],
                         "imagePaths": [
                             { "file": "/images/vae2.png", "isPanorama": false }, 
-                            { "file": "/images/vae6.png", "isPanorama": false }, 
                             { "file": "/images/vae4.png", "isPanorama": false },
                             { "file": "/images/vae5.png", "isPanorama": false }
                         ],
@@ -128,6 +127,7 @@
                         ],
                         "imagePaths": [
                             { "file": "/images/qtp2.png", "isPanorama": false },
+                            { "file": "/images/qtpBackground.png", "isPanorama": false },
                             { "file": "/images/qtpNew.png", "isPanorama": false }
                         ],
                         "footnote": "* Quick-Turn Delivery starts after all components are in-house and kitted."
@@ -223,11 +223,11 @@
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "IPC/J-STD Workmanship Compliance",
+                                "mainItem": "IPC/J-STD Workmanship",
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "Well-Trained and Certified Production Personnel",
+                                "mainItem": "Well-Trained and Certified Personnel",
                                 "nestedList": []
                             },
                             {
@@ -236,11 +236,15 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/qtp1.png", "isPanorama": true },
-                            { "file": "/images/machine1.png", "isPanorama": false },
                             { "file": "/images/machine2.png", "isPanorama": false },
-                            { "file": "/images/machine3.png", "isPanorama": false },
-                            { "file": "/images/machine4.png", "isPanorama": false }
+                            { "file": "/images/image034.png", "isPanorama": false },
+                            { "file": "/images/machine1.png", "isPanorama": false },
+                            { "file": "/images/xrayMachine.png", "isPanorama": false },
+                            { "file": "/images/qtp1.png", "isPanorama": false },
+                            { "file": "/images/vae3.png", "isPanorama": false },
+                            { "file": "/images/machine4.png", "isPanorama": false },
+                            { "file": "/images/image041.png", "isPanorama": false },
+                            { "file": "/images/machine3.png", "isPanorama": false }
                         ],
                         "footnote": ""
                     }
@@ -285,6 +289,10 @@
                                 "nestedList": []
                             },
                             {
+                                "mainItem": "Vendor-Managed Inventory",
+                                "nestedList": []
+                            },
+                            {
                                 "mainItem": "Logistics",
                                 "nestedList": []
                             }
@@ -305,7 +313,7 @@
         "FILL": {
             "serviceType": "Fulfillment",
             "imagePath": "/images/fulfillment.png",
-            "background": "/images/fulfillment.png",
+            "background": "/images/order.png",
             "pathToSVG": "/svgs/calendar-date.svg",
             "pageLink": "/services/fulfillment",
             "content": {
@@ -341,8 +349,8 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/aftermarket1.png", "isPanorama": false },
-                            { "file": "/images/fulfillment.png", "isPanorama": false }
+                            { "file": "/images/package.png", "isPanorama": false },
+                            { "file": "/images/orderPlan.png", "isPanorama": false }
                         ],
                         "footnote": ""
                     }
@@ -398,7 +406,7 @@
         },
         "CE": {
             "industryType": "Consumer Electronics",
-            "imagePath": "/images/image012.png",
+            "imagePath": "/images/electronics.png",
             "pathToSVG": "/svgs/laptop.svg",
             "pageLink": "#"
         },
@@ -410,7 +418,7 @@
         },
         "MD": {
             "industryType": "Medical Devices",
-            "imagePath": "/images/image004.png",
+            "imagePath": "/images/medical.png",
             "pathToSVG": "/svgs/heart-pulse-fill.svg",
             "pageLink": "#"
         },
@@ -432,7 +440,7 @@
             "fullName": "Rick Suba",
             "role": "Founder and CEO",
             "description": "",
-            "imagePath": "/images/image032.png"
+            "imagePath": "/images/rick.png"
         },
         {
             "fullName": "Alex Obice",
