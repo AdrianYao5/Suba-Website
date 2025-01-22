@@ -64,10 +64,13 @@
                         <div class="col-12 col-lg-7 <% if (k % 2 === 1) { %>order-lg-first<% } %>">
                             <% if(Array.isArray(galleryImages)) { %>
                                 <div class="row g-0 image-gallery">
-                                    <% let lastPanoramaIndex = 0; for(let k=0; k < galleryImages.length; k++) { %>
-                                        <div class="col-6 d-flex <% if(k % 2 !== 0) { %>
-                                            justify-content-start<% } else { if(k === galleryImages.length - 1) {%>
-                                                justify-content-center<%} else {%>justify-content-end<% }} %>">
+                                    <% for(let k=0; k < galleryImages.length; k++) { %>
+                                        <div class="col-4 d-flex <% switch(k % 3) { case 2: %>
+                                            justify-content-start<% break; case 1: if(k === galleryImages.length - 1) {%>
+                                                justify-content-start<%} else {%>
+                                            justify-content-center<% } break; default: if(k === galleryImages.length - 1) {%>
+                                                justify-content-center<%} else {%>
+                                            justify-content-end<% }} %>">
                                             <img class="img-fluid" src="<%= galleryImages[k].file %>">
                                         </div>
                                         <% } %>
