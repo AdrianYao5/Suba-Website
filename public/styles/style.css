@@ -436,7 +436,7 @@ textarea.form-control {
 #cookiesButton {
     position: fixed;
     right: 1rem;
-    bottom: 1.5rem;
+    bottom: 2.5rem;
 }
 
 @media only screen and (max-width: 1199px) {
