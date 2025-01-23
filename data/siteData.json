@@ -43,12 +43,12 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/vave1.png", "isPanorama": false },
-                            { "file": "/images/vave3.png", "isPanorama": false },
-                            { "file": "/images/vave5.png", "isPanorama": false },
-                            { "file": "/images/vave2.png", "isPanorama": false },
-                            { "file": "/images/vave4.png", "isPanorama": false },
-                            { "file": "/images/vave6.png", "isPanorama": false }
+                            { "file": "/images/vave1.png", "shrink": false },
+                            { "file": "/images/vave3.png", "shrink": false },
+                            { "file": "/images/vave5.png", "shrink": false },
+                            { "file": "/images/vave2.png", "shrink": false },
+                            { "file": "/images/vave4.png", "shrink": false },
+                            { "file": "/images/vave6.png", "shrink": false }
                         ],
                         "footnote": ""
                     },
@@ -86,9 +86,9 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/vae2.png", "isPanorama": false }, 
-                            { "file": "/images/vae4.png", "isPanorama": false },
-                            { "file": "/images/vae5.png", "isPanorama": false }
+                            { "file": "/images/vae2.png", "shrink": false }, 
+                            { "file": "/images/vae4.png", "shrink": false },
+                            { "file": "/images/vae5.png", "shrink": false }
                         ],
                         "footnote": ""
                     }
@@ -98,7 +98,7 @@
         "QTP": {
             "serviceType": "Quick-Turn Prototype",
             "imagePath": "/images/qtpBackground.png",
-            "background": "/images/qtpBackground.png",
+            "background": "/images/image014.png",
             "pathToSVG": "/svgs/robot.svg",
             "pageLink": "/services/quickTurnPrototype",
             "content": {
@@ -126,9 +126,9 @@
 
                         ],
                         "imagePaths": [
-                            { "file": "/images/qtp2.png", "isPanorama": false },
-                            { "file": "/images/qtpBackground.png", "isPanorama": false },
-                            { "file": "/images/qtpNew.png", "isPanorama": false }
+                            { "file": "/images/qtp2.png", "shrink": false },
+                            { "file": "/images/qtpBackground.png", "shrink": false },
+                            { "file": "/images/qtpNew.png", "shrink": false }
                         ],
                         "footnote": "* Quick-Turn Delivery starts after all components are in-house and kitted."
                     }
@@ -138,7 +138,7 @@
         "QA": {
             "serviceType": "Quality Assurance",
             "imagePath": "/images/qa4.png",
-            "background": "/images/qaBackground.png",
+            "background": "/images/qaBackground2.png",
             "pathToSVG": "/svgs/clipboard2-check-fill.svg",
             "pageLink": "/services/qualityAssurance",
             "content": {
@@ -176,11 +176,12 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/spi+aoi.png", "isPanorama": false },
-                            { "file": "/images/aoiImage.png", "isPanorama": false },
-                            { "file": "/images/xrayMachine.png", "isPanorama": false },
-                            { "file": "/images/xrayImage.png", "isPanorama": false },
-                            { "file": "/images/qa4.png", "isPanorama": false }
+                            { "file": "/images/spi+aoi.png", "shrink": false },
+                            { "file": "/images/aoiImage.png", "shrink": false },
+                            { "file": "/images/qa4.png", "shrink": false },
+                            { "file": "/images/xrayMachine.png", "shrink": false },
+                            { "file": "/images/xrayImage.png", "shrink": false }
+                            
                         ],
                         "footnote": ""
                     }
@@ -190,7 +191,7 @@
         "AMS": {
             "serviceType": "Advanced Manufacturing Services",
             "imagePath": "/images/qtp1.png",
-            "background": "/images/equipmentPanorama.png",
+            "background": "/images/equipmentPanorama2.png",
             "pathToSVG": "/svgs/cpu-fill.svg",
             "pageLink": "/services/advancedManufacturingServices",
             "content": {
@@ -236,15 +237,15 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/machine2.png", "isPanorama": false },
-                            { "file": "/images/image034.png", "isPanorama": false },
-                            { "file": "/images/machine1.png", "isPanorama": false },
-                            { "file": "/images/xrayMachine.png", "isPanorama": false },
-                            { "file": "/images/qtp1.png", "isPanorama": false },
-                            { "file": "/images/vae3.png", "isPanorama": false },
-                            { "file": "/images/machine4.png", "isPanorama": false },
-                            { "file": "/images/image041.png", "isPanorama": false },
-                            { "file": "/images/machine3.png", "isPanorama": false }
+                            { "file": "/images/machine1.png", "shrink": true },
+                            { "file": "/images/image034.png", "shrink": false },
+                            { "file": "/images/machine2.png", "shrink": true },
+                            { "file": "/images/machine4.png", "shrink": true },
+                            { "file": "/images/qtp1.png", "shrink": false },
+                            { "file": "/images/vae3.png", "shrink": true },
+                            { "file": "/images/machine3.png", "shrink": true },
+                            { "file": "/images/image041.png", "shrink": false },
+                            { "file": "/images/xrayMachine.png", "shrink": true }
                         ],
                         "footnote": ""
                     }
@@ -298,12 +299,12 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/inventory.png", "isPanorama": false },
-                            { "file": "/images/supplyChain5.png", "isPanorama": false },
-                            { "file": "/images/supplyChain7.png", "isPanorama": false },
-                            { "file": "/images/supplyChain2.png", "isPanorama": false },
-                            { "file": "/images/supplyChain6.png", "isPanorama": false },
-                            { "file": "/images/supplyChain4.png", "isPanorama": false }
+                            { "file": "/images/inventory.png", "shrink": false },
+                            { "file": "/images/supplyChain5.png", "shrink": false },
+                            { "file": "/images/supplyChain7.png", "shrink": false },
+                            { "file": "/images/supplyChain2.png", "shrink": false },
+                            { "file": "/images/supplyChain6.png", "shrink": false },
+                            { "file": "/images/supplyChain4.png", "shrink": false }
                         ],
                         "footnote": ""
                     }
@@ -313,7 +314,7 @@
         "FILL": {
             "serviceType": "Fulfillment",
             "imagePath": "/images/fulfillment.png",
-            "background": "/images/order.png",
+            "background": "/images/package.png",
             "pathToSVG": "/svgs/calendar-date.svg",
             "pageLink": "/services/fulfillment",
             "content": {
@@ -349,8 +350,8 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/package.png", "isPanorama": false },
-                            { "file": "/images/orderPlan.png", "isPanorama": false }
+                            { "file": "/images/delivery.png", "shrink": false },
+                            { "file": "/images/orderPlan.png", "shrink": false }
                         ],
                         "footnote": ""
                     }
@@ -359,8 +360,8 @@
         },
         "AS": {
             "serviceType": "After-Sales Services",
-            "imagePath": "/images/aftermarket2.png",
-            "background": "/images/aftermarket2.png",
+            "imagePath": "/images/services.png",
+            "background": "/images/services2.png",
             "pathToSVG": "/svgs/tools.svg",
             "pageLink": "/services/afterSaleServices",
             "content": {
@@ -388,8 +389,8 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/aftermarket1.png", "isPanorama": false },
-                            { "file": "/images/aftermarket2.png", "isPanorama": false }
+                            { "file": "/images/aftermarket1.png", "shrink": false },
+                            { "file": "/images/services.png", "shrink": false }
                         ],
                         "footnote": ""
                     }
@@ -418,7 +419,7 @@
         },
         "MD": {
             "industryType": "Medical Devices",
-            "imagePath": "/images/medical.png",
+            "imagePath": "/images/medical2.png",
             "pathToSVG": "/svgs/heart-pulse-fill.svg",
             "pageLink": "#"
         },
@@ -430,7 +431,7 @@
         },
         "AD": {
             "industryType": "Aerospace and Defense",
-            "imagePath": "/images/image006.png",
+            "imagePath": "/images/aero.png",
             "pathToSVG": "/svgs/airplane-engines-fill.svg",
             "pageLink": "#"
         }
