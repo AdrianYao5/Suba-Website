@@ -3,7 +3,7 @@
         "VAE": {
             "serviceType": "Value-Add Value Engineering",
             "imagePath": "/images/vaveBackground.png",
-            "background": "/images/vaveBackground2.png",
+            "background": "/images/valueAddEngineering.jpg",
             "pathToSVG": "/svgs/person-fill-gear.svg",
             "pageLink": "/services/valueAddEngineering",
             "content": {
@@ -43,12 +43,12 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/vave1.png", "shrink": false },
-                            { "file": "/images/vave3.png", "shrink": false },
-                            { "file": "/images/vave5.png", "shrink": false },
-                            { "file": "/images/vave2.png", "shrink": false },
-                            { "file": "/images/vave4.png", "shrink": false },
-                            { "file": "/images/vave6.png", "shrink": false }
+                            { "file": "/images/vave1.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/vave3.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/vave5.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/vave2.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/vave4.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/vave6.png", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     },
@@ -86,9 +86,9 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/vae2.png", "shrink": false }, 
-                            { "file": "/images/vae4.png", "shrink": false },
-                            { "file": "/images/vae5.png", "shrink": false }
+                            { "file": "/images/spcChart.jpg", "shrink": false, "isPanoramic": false }, 
+                            { "file": "/images/vae4.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/vae5.png", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     }
@@ -97,8 +97,8 @@
         },
         "QTP": {
             "serviceType": "Quick-Turn Prototype",
-            "imagePath": "/images/qtpBackground.png",
-            "background": "/images/image014.png",
+            "imagePath": "/images/prototypeInspect.jpg",
+            "background": "/images/microchip.jpg",
             "pathToSVG": "/svgs/robot.svg",
             "pageLink": "/services/quickTurnPrototype",
             "content": {
@@ -126,9 +126,9 @@
 
                         ],
                         "imagePaths": [
-                            { "file": "/images/qtp2.png", "shrink": false },
-                            { "file": "/images/qtpBackground.png", "shrink": false },
-                            { "file": "/images/qtpNew.png", "shrink": false }
+                            { "file": "/images/qtp2.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/prototypeInspect.jpg", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/workshop.jpg", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": "* Quick-Turn Delivery starts after all components are in-house and kitted."
                     }
@@ -137,8 +137,8 @@
         },
         "QA": {
             "serviceType": "Quality Assurance",
-            "imagePath": "/images/qa4.png",
-            "background": "/images/qaBackground2.png",
+            "imagePath": "/images/qcInspection.jpg",
+            "background": "/images/qualityAssurance.jpg",
             "pathToSVG": "/svgs/clipboard2-check-fill.svg",
             "pageLink": "/services/qualityAssurance",
             "content": {
@@ -176,12 +176,11 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/spi+aoi.png", "shrink": false },
-                            { "file": "/images/aoiImage.png", "shrink": false },
-                            { "file": "/images/qa4.png", "shrink": false },
-                            { "file": "/images/xrayMachine.png", "shrink": false },
-                            { "file": "/images/xrayImage.png", "shrink": false }
-                            
+                            { "file": "/images/spi+aoi.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/aoiImage.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/qcInspection.jpg", "shrink": false, "isPanoramic": true },
+                            { "file": "/images/xrayMachine.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/xrayImage.png", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     }
@@ -190,8 +189,8 @@
         },
         "AMS": {
             "serviceType": "Advanced Manufacturing Services",
-            "imagePath": "/images/qtp1.png",
-            "background": "/images/equipmentPanorama2.png",
+            "imagePath": "/images/smt.png",
+            "background": "/images/microchip.jpg",
             "pathToSVG": "/svgs/cpu-fill.svg",
             "pageLink": "/services/advancedManufacturingServices",
             "content": {
@@ -206,7 +205,7 @@
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "3 SMT Panasonic Lines",
+                                "mainItem": "3 SMT Lines",
                                 "nestedList": [
                                     "One Dedicated Prototype Line"
                                 ]
@@ -237,15 +236,13 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/machine1.png", "shrink": true },
-                            { "file": "/images/image034.png", "shrink": false },
-                            { "file": "/images/machine2.png", "shrink": true },
-                            { "file": "/images/machine4.png", "shrink": true },
-                            { "file": "/images/qtp1.png", "shrink": false },
-                            { "file": "/images/vae3.png", "shrink": true },
-                            { "file": "/images/machine3.png", "shrink": true },
-                            { "file": "/images/image041.png", "shrink": false },
-                            { "file": "/images/xrayMachine.png", "shrink": true }
+                            { "file": "/images/machine1.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/machine2.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/machine4.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/equipment.png", "shrink": false, "isPanoramic": true },
+                            { "file": "/images/vae3.png", "shrink": true, "isPanoramic": false },
+                            { "file": "/images/machine3.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/xrayMachine.png", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     }
@@ -254,8 +251,8 @@
         },
         "SC": {
             "serviceType": "Supply Chain",
-            "imagePath": "/images/supplyChain7.png",
-            "background": "/images/supplyBackground.png",
+            "imagePath": "/images/scConcept.jpg",
+            "background": "/images/supplyChain.jpg",
             "pathToSVG": "/svgs/box-seam-fill.svg",
             "pageLink": "/services/supplyChain",
             "content": {
@@ -299,12 +296,12 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/inventory.png", "shrink": false },
-                            { "file": "/images/supplyChain5.png", "shrink": false },
-                            { "file": "/images/supplyChain7.png", "shrink": false },
-                            { "file": "/images/supplyChain2.png", "shrink": false },
-                            { "file": "/images/supplyChain6.png", "shrink": false },
-                            { "file": "/images/supplyChain4.png", "shrink": false }
+                            { "file": "/images/inventory.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/resistors.jpg", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/supplyChain7.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/mrp.jpg", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/fanTrays.jpg", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/componentReels.jpg", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     }
@@ -313,8 +310,8 @@
         },
         "FILL": {
             "serviceType": "Fulfillment",
-            "imagePath": "/images/fulfillment.png",
-            "background": "/images/package.png",
+            "imagePath": "/images/fulfillment.jpg",
+            "background": "/images/package.jpg",
             "pathToSVG": "/svgs/calendar-date.svg",
             "pageLink": "/services/fulfillment",
             "content": {
@@ -350,8 +347,8 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/delivery.png", "shrink": false },
-                            { "file": "/images/orderPlan.png", "shrink": false }
+                            { "file": "/images/delivery.jpg", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/orderPlan.jpg", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     }
@@ -360,8 +357,8 @@
         },
         "AS": {
             "serviceType": "After-Sales Services",
-            "imagePath": "/images/services.png",
-            "background": "/images/services2.png",
+            "imagePath": "/images/pcbaRepair.jpg",
+            "background": "/images/afterSaleServices.jpg",
             "pathToSVG": "/svgs/tools.svg",
             "pageLink": "/services/afterSaleServices",
             "content": {
@@ -389,8 +386,8 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/aftermarket1.png", "shrink": false },
-                            { "file": "/images/services.png", "shrink": false }
+                            { "file": "/images/manualRepair.jpg", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/pcbaRepair.jpg", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     }
@@ -401,37 +398,37 @@
     "industries": {
         "IOT": {
             "industryType": "Internet of Things (IoT)",
-            "imagePath": "/images/image010.png",
+            "imagePath": "/images/iot.jpg",
             "pathToSVG": "/svgs/router.svg",
             "pageLink": "#"
         },
         "CE": {
             "industryType": "Consumer Electronics",
-            "imagePath": "/images/electronics.png",
+            "imagePath": "/images/electronics.jpg",
             "pathToSVG": "/svgs/laptop.svg",
             "pageLink": "#"
         },
         "RE": {
             "industryType": "Renewable Energy",
-            "imagePath": "/images/renewable.png",
+            "imagePath": "/images/renewable.jpg",
             "pathToSVG": "/svgs/sun-fill.svg",
             "pageLink": "#"
         },
         "MD": {
             "industryType": "Medical Devices",
-            "imagePath": "/images/medical2.png",
+            "imagePath": "/images/medical.png",
             "pathToSVG": "/svgs/heart-pulse-fill.svg",
             "pageLink": "#"
         },
         "EV": {
             "industryType": "Electric Vehicles",
-            "imagePath": "/images/image003.png",
+            "imagePath": "/images/EV.png",
             "pathToSVG": "/svgs/ev-front-fill.svg",
             "pageLink": "#"
         },
         "AD": {
             "industryType": "Aerospace and Defense",
-            "imagePath": "/images/aero.png",
+            "imagePath": "/images/aerospace.png",
             "pathToSVG": "/svgs/airplane-engines-fill.svg",
             "pageLink": "#"
         }
