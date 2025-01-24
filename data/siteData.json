@@ -126,7 +126,7 @@
 
                         ],
                         "imagePaths": [
-                            { "file": "/images/qtp2.png", "shrink": false, "isPanoramic": false },
+                            { "file": "/images/pcbaDiagnosis.jpg", "shrink": false, "isPanoramic": false },
                             { "file": "/images/prototypeInspect.jpg", "shrink": false, "isPanoramic": false },
                             { "file": "/images/workshop.jpg", "shrink": false, "isPanoramic": false }
                         ],
@@ -357,7 +357,7 @@
         },
         "AS": {
             "serviceType": "After-Sales Services",
-            "imagePath": "/images/pcbaRepair.jpg",
+            "imagePath": "/images/pcbaDiagnosis.jpg",
             "background": "/images/afterSaleServices.jpg",
             "pathToSVG": "/svgs/tools.svg",
             "pageLink": "/services/afterSaleServices",
