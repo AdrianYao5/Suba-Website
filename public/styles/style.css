@@ -375,14 +375,18 @@ textarea.form-control {
     justify-content: center;
 }
 
+.image-gallery > div {
+    height: var(--img-height);
+}
+
 .image-gallery img {
-    max-height: var(--img-height);
+    max-height: 100%;
     object-fit: contain;
     background-color: #fafafa;
 }
 
 .img-shrink {
-    height: calc(0.5 * var(--img-height));
+    max-height: calc(0.8 * var(--img-height));
 }
 
 .img-container {
