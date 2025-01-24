@@ -61,17 +61,18 @@
                                             <% } %>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-7 <% if (k % 2 === 1) { %>order-lg-first<% } %>">
+                        <div class="col-12 col-lg-7 <% if (locals.serviceCode === "AMS") { %>bg-light<% } %> 
+                            <% if (k % 2 === 1) { %>order-lg-first<% } %>">
                             <% if(Array.isArray(galleryImages)) { %>
                                 <div class="row g-0 image-gallery">
                                     <% let notPanoramicCount = 0; for(let k=0; k < galleryImages.length; k++) { %>
-                                        <div class="d-flex <% if (galleryImages[k].isPanoramic) { notPanoramicCount = 0; %>col-12 justify-content-center bg-light
+                                        <div class="d-flex <% if (galleryImages[k].isPanoramic) { notPanoramicCount = 0; %>col-12 justify-content-center
                                             <% } else { %>col-4 
                                             <% switch(notPanoramicCount % 3) { case 2: %>
                                             justify-content-start<% break; case 1: if(k  === galleryImages.length - 1) {%>
-                                                justify-content-start<% } else {%>
+                                                justify-content-start<% } else { %>
                                             justify-content-center bg-light <% } break; default: if(k === galleryImages.length - 1) {%>
-                                                justify-content-center<% } else {%>
+                                                justify-content-center<% } else { %>
                                             justify-content-end<% }} notPanoramicCount++; } %>">
                                             <img class="img-fluid <% if (galleryImages[k].shrink) { %>
                                                 img-shrink my-auto<% } %>" src="<%= galleryImages[k].file %>">
