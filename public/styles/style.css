@@ -27,7 +27,7 @@ html, body {
     color: #0081AB;
 }
 
-footer .nav-link, footer .dropdown-item{
+footer .nav-link, footer .dropdown-item {
     color: #0081AB;
 }
 
@@ -469,10 +469,6 @@ textarea.form-control {
 
 /* for screens up to medium */
 @media only screen and (max-width: 991px) {
-    #imageCarousel > .carousel-indicators {
-        bottom: 3.25rem;
-    }
-
     .country-select {
         max-width: 100%;
     }
@@ -505,10 +501,6 @@ textarea.form-control {
 
 /* for screens up to small */
 @media only screen and (max-width: 576px) {
-    #imageCarousel > .carousel-indicators {
-        bottom: 4rem;
-    }
-
     #cookiesBanner {
         width: 75%;
     }
