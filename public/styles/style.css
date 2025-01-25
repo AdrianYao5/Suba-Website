@@ -6,10 +6,10 @@
     --blue: #002387;
     --shadow-offset: 7px;
     --dark-bg-transparent: rgba(0, 0, 0, 0.05);
-    --height-carousel: 750px;
+    --height-carousel: 75vh;
     --height-gallery: 600px;
     --height-features: 500px;
-    --navbar-height: 7.5rem;
+    --navbar-height: 5.75rem;
     --img-height: 30vh;
 }
 
@@ -67,7 +67,7 @@ footer .nav-link, footer .dropdown-item{
 }
 
 #imageCarousel .carousel-item, .industry-gallery {
-    height: 70vh;
+    height: var(--height-carousel);
 }
 
 .cnCarousel .carousel-item > img {
@@ -257,6 +257,11 @@ White carousel indicators
     height: 10rem;
 }
 
+.industry-card {
+    width: 13rem;
+    height: 13rem;
+}
+
 .card-link {
     display: block;
     text-decoration: none;
@@ -308,20 +313,10 @@ textarea.form-control {
     justify-content: center;
 }
 
-.industry-card {
-    width: 18rem;
-    height: 20rem;
-}
-
 .industry-card .card-link {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
-
-.industry-gallery > div {
-    position: relative;
-    bottom: 3.5rem;
 }
 
 .industry-gallery {
@@ -474,12 +469,6 @@ textarea.form-control {
 
 /* for screens up to medium */
 @media only screen and (max-width: 991px) {
-    .industry-gallery {
-        display: flex;
-        flex-direction: row;
-        height: 50vh;
-    }
-
     #imageCarousel > .carousel-indicators {
         bottom: 3.25rem;
     }
@@ -495,6 +484,10 @@ textarea.form-control {
 
 /* for screens up to medium */
 @media only screen and (max-width: 767px) {
+    .industry-gallery {
+        height: 60vh;
+    }
+
     .features .card {
         width: 20rem;
     }
@@ -512,12 +505,6 @@ textarea.form-control {
 
 /* for screens up to small */
 @media only screen and (max-width: 576px) {
-    .industry-gallery {
-        display: flex;
-        flex-direction: column;
-        height: 70vh;
-    }
-
     #imageCarousel > .carousel-indicators {
         bottom: 4rem;
     }
