@@ -481,7 +481,7 @@ textarea.form-control {
 /* for screens up to medium */
 @media only screen and (max-width: 767px) {
     .industry-gallery {
-        height: 60vh;
+        height: 100%;
     }
 
     .features .card {
