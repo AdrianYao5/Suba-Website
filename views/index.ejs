@@ -181,7 +181,7 @@
     </div>
 </main>
 
-<div id="cookiesBanner" class="collapse show">
+<div id="cookiesBanner" class="collapse <%if (locals.hasConsent === "no") { %>show<% } %>">
     <div class="comfortaa card" data-bs-theme="light">
         <div class="card-header d-inline-flex align-items-center justify-content-between py-3 px-5">
             <h4 class="fw-bold fs-3 text-blue my-auto">Cookies and Privacy</h4>
@@ -194,18 +194,20 @@
             </p>
         </div>
         <div class="card-footer d-flex flex-wrap align-items-center justify-content-center justify-content-xl-end gap-2 py-2 px-5">
-            <button class="btn btn-outline-dark btn-lg" type="button" data-bs-toggle="collapse"
-                data-bs-target="#cookiesBanner" aria-expanded="false">
-                Reject All
-            </button>
-            <button class="ms-3 btn btn-outline-light btn-lg blue-bg-2 text-light" type="button"
-                data-bs-toggle="collapse" data-bs-target="#cookiesBanner" aria-expanded="false">
-                Necessary Cookies Only
-            </button>
-            <button class="ms-3 btn btn-outline-light btn-lg blue-bg-2 text-light" type="button"
-                data-bs-toggle="collapse" data-bs-target="#cookiesBanner" aria-expanded="false">
-                Accept All
-            </button>
+            <form action="/setCookieConsent" method="post">
+                <button class="btn btn-outline-dark" type="submit" data-bs-toggle="collapse" data-bs-target="#cookiesBanner"
+                    aria-expanded="false">
+                    Reject All
+                </button>
+                <button class="ms-3 btn btn-outline-light blue-bg-2" type="submit" data-bs-toggle="collapse"
+                    data-bs-target="#cookiesBanner" aria-expanded="submit">
+                    Necessary Cookies Only
+                </button>
+                <button class="ms-3 btn btn-outline-light blue-bg-2" type="submit" data-bs-toggle="collapse"
+                    data-bs-target="#cookiesBanner" aria-expanded="submit">
+                    Accept All
+                </button>
+            </form>
         </div>
     </div>
 </div>
