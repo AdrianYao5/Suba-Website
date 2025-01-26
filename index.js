@@ -33,18 +33,24 @@ function getSiteData(req, res, next) {
   next();
 }
 
+function setCookies(req, res, next) {
+  if(req.cookies.hasCookieConsent === undefined) {
+    console.log("Setting cookies...");
+    res.cookie("hasCookieConsent", "no", { httpOnly: true });
+  }
+
+  next();
+}
+
 app.use(cookieParser());
+app.use(setCookies);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(getSiteData);
 
 app.get("/", (req, res) => {
-  if(req.cookies.hasCookieConsent === undefined) {
-    console.log("Setting cookies...");
-    res.cookie("hasCookieConsent", "no", { httpOnly: true });
-  }
-
   res.locals = { 
     serviceList: siteData.services, 
     industriesList: siteData.industries, 
