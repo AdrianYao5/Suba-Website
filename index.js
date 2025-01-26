@@ -1,4 +1,5 @@
 import express from "express";
+import cookieParser from "cookie-parser";
 import fs from "fs";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -32,13 +33,23 @@ function getSiteData(req, res, next) {
   next();
 }
 
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(getSiteData);
 
 app.get("/", (req, res) => {
-  res.locals = { serviceList: siteData.services, industriesList: siteData.industries };
+  if(req.cookies.hasCookieConsent === undefined) {
+    console.log("Setting cookies...");
+    res.cookie("hasCookieConsent", "no", { httpOnly: true });
+  }
+
+  res.locals = { 
+    serviceList: siteData.services, 
+    industriesList: siteData.industries, 
+    hasConsent: req.cookies['hasCookieConsent']
+  };
   res.render("index.ejs");
 });
 
@@ -114,6 +125,11 @@ app.get("/careers/jobOpenings", (req, res) => {
     departments: [...new Set(careersData.jobs.map(job => job.department))] 
   };
   res.render("job-openings.ejs");
+});
+
+app.post("/setCookieConsent", (req, res) => {
+  res.cookie("hasCookieConsent", "yes", { httpOnly: true });
+  res.redirect("/");
 });
 
 app.post("/careers/jobOpenings", (req, res) => {
