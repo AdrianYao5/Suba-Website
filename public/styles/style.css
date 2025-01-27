@@ -5,7 +5,7 @@
     --steel-blue: #08457b;
     --blue: #002387;
     --shadow-offset: 7px;
-    --dark-bg-transparent: rgba(0, 0, 0, 0.05);
+    --dark-bg-transparent: rgba(0, 0, 0, 0.35);
     --height-carousel: 75vh;
     --height-gallery: 600px;
     --height-features: 500px;
@@ -162,7 +162,10 @@ White carousel indicators
 
 .feature-block > div {
     position: relative;
-    bottom: 60px;
+    bottom: 4.75rem;
+}
+
+.feature-block .card-link {
     z-index: 2;
 }
 
