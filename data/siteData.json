@@ -105,8 +105,8 @@
                 "title": "Quick-Turn Prototype",
                 "sections": [
                     {
-                        "headline": "Sensitivity to our customers’ designs and proof of concepts is what matters. We strive to do things right the first time​",
-                        "message": "Suba technology prioritizes quality performance against industry standards and fundamentals to deliver products that demand quick turnaround times.",
+                        "headline": "Sensitivity to our customers’ designs and proof of concepts are what matters. We strive to do things right the first time and doing the right things​",
+                        "message": "Suba Technology prioritizes quality performance against industry standards and fundamentals to deliver products that demand quick turnaround times.",
                         "listItems": [
                             {
                                 "mainItem": "Quick-Turn Delivery *",
@@ -145,8 +145,8 @@
                 "title": "Quality Assurance",
                 "sections": [
                     {
-                        "headline": "Ensuring adherence to the quality policy and quality manual is our everyday way of life​",
-                        "message": "Suba Technology's commitment to quality is reflected in its history of zero ppm performance to-date and continual investment in advanced equipment and talented trained personnel. The company is dedicated to delivering the best value to its customers through excellence in service, product quality and continuous improvements.​",
+                        "headline": "Ensuring adherence to the Quality Policy and Quality Manual is our everyday way of life​",
+                        "message": "Suba Technology's commitment to quality is reflected in its history of zero PPM performance to-date and continual investments in advanced equipment and talented trained personnel. The Company is dedicated to delivering the best value to its customers through excellence in service, product quality and continuous improvements.​",
                         "listItems": [
                             {
                                 "mainItem": "QMS",
@@ -159,7 +159,7 @@
                                 ]
                             },
                             {
-                                "mainItem": "Top of the line inspection equipment",
+                                "mainItem": "Top of the Line Inspection Equipment",
                                 "nestedList": []
                             },
                             {
@@ -190,7 +190,7 @@
         "AMS": {
             "serviceType": "Advanced Manufacturing Services",
             "imagePath": "/images/smt.png",
-            "background": "/images/microchip.jpg",
+            "background": "/images/pickAndPlace.jpg",
             "pathToSVG": "/svgs/cpu-fill.svg",
             "pageLink": "/services/advancedManufacturingServices",
             "content": {
@@ -231,7 +231,7 @@
                                 "nestedList": []
                             },
                             {
-                                "mainItem": "Very clean environment",
+                                "mainItem": "Clean Environment",
                                 "nestedList": []
                             }
                         ],
@@ -366,7 +366,7 @@
                 "sections": [
                     {
                         "headline": "Extension of the products’ lifecycle is one of our capabilities for continuous customer service​",
-                        "message": "Whether the programs are at high-mix-low-volume or low-mix-high volume, the focus remains the same on timely and disciplined builds against industrial engineering models without compromise to quality.​",
+                        "message": "​",
                         "listItems": [
                             {
                                 "mainItem": "Upgrades",
