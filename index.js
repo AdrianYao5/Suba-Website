@@ -54,6 +54,7 @@ app.get("/", (req, res) => {
   res.locals = { 
     serviceList: siteData.services, 
     industriesList: siteData.industries, 
+    carouselCycleMS: 5000,
     hasConsent: req.cookies['hasCookieConsent']
   };
   res.render("index.ejs");
