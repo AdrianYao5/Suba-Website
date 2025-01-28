@@ -18,11 +18,10 @@
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <h1 class="display-4 fw-lighter mb-3">Key Services</h1>
                         <p class="fw-lighter lead">
-                            Suba Technology’s technical staff has been serving the industries for over 25 plus years and
-                            continue to learn new solutions to be in constant parallel with the ever changing world of
-                            innovations. Our talented staff is fully committed to meet and understand the
-                            customers' needs. We will be their partner in their never-ending quest for quality,
-                            competitiveness, and profitability.
+                            Suba Technology has been serving the industries for over 25 years, and we will 
+                            continue to find new innovative solutions to align with the ever changing world of
+                            technology. Our partnership is key to our never-ending quest on quality, delivery, 
+                            and competitiveness.
                         </p>
                         <a class="btn btn-lg btn-outline-light blue-bg-2" href="/services">Learn More ...</a>
                     </div>
@@ -92,7 +91,7 @@
                     </div>
                     <div class="carousel-inner">
                         <% for (let i = 0; i < industryImages.length; i++) { %>
-                        <div class="carousel-item<%if (i === 0) { %> active<% } %>" data-bs-interval="15000">
+                        <div class="carousel-item<%if (i === 0) { %> active<% } %>" data-bs-interval="<%= locals.carouselCycleMS %>">
                             <img src="<%=industryImages[i]%>" class="d-block" alt="...">
                         </div>
                         <% } %>
@@ -117,7 +116,7 @@
                 <div id="linksCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
                     <div class="carousel-inner p-4">
                         <% for (let j = 0; j < industryTypes.length; j++) { %>
-                        <div class="carousel-item<%if (j === 0) { %> active<% } %>" data-bs-interval="15000">
+                        <div class="carousel-item<%if (j === 0) { %> active<% } %>" data-bs-interval="<%= locals.carouselCycleMS %>">
                             <div class="industry-card mx-auto">
                                 <a class="card-link">
                                     <div class="card-container">
