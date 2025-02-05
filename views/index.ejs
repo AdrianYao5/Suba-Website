@@ -80,35 +80,7 @@
                 }
         %>
         <div class="row g-0">
-            <div class="col-12 col-lg-7 blue-bg-2 order-lg-last">
-                <div id="imageCarousel" class="cnCarousel carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <% for (let i = 0; i < industryTypes.length; i++) { %>
-                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="<%=i%>" 
-                            <% if (i === 0) { %> class="active" <% } %>
-                            aria-current="true" aria-label="Slide <%=i + 1%>"></button>
-                        <% } %>
-                    </div>
-                    <div class="carousel-inner">
-                        <% for (let i = 0; i < industryImages.length; i++) { %>
-                        <div class="carousel-item<%if (i === 0) { %> active<% } %>" data-bs-interval="<%= locals.carouselCycleMS %>">
-                            <img src="<%=industryImages[i]%>" class="d-block" alt="...">
-                        </div>
-                        <% } %>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="col-12 col-lg-5 blue-bg p-5 order-lg-first industry-gallery">
+            <div class="col-12 col-lg-5 blue-bg p-5 industry-gallery">
                 <div class="container p-4">
                     <h1 class="display-5 fw-bold">Industries We Serve</h1>
                     <a class="btn btn-lg btn-light" href="/industries">Learn More ...</a>
@@ -138,6 +110,34 @@
                         </div>
                         <% } %>
                     </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 blue-bg-2">
+                <div id="imageCarousel" class="cnCarousel carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <% for (let i = 0; i < industryTypes.length; i++) { %>
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="<%=i%>" 
+                            <% if (i === 0) { %> class="active" <% } %>
+                            aria-current="true" aria-label="Slide <%=i + 1%>"></button>
+                        <% } %>
+                    </div>
+                    <div class="carousel-inner">
+                        <% for (let i = 0; i < industryImages.length; i++) { %>
+                        <div class="carousel-item<%if (i === 0) { %> active<% } %>" data-bs-interval="<%= locals.carouselCycleMS %>">
+                            <img src="<%=industryImages[i]%>" class="d-block" alt="...">
+                        </div>
+                        <% } %>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
