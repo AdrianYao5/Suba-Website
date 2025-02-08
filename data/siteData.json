@@ -438,7 +438,7 @@
             "fullName": "Rick Suba",
             "role": "Founder and CEO",
             "description": "",
-            "imagePath": "/images/rick.png"
+            "imagePath": "/images/rickActual.jpeg"
         },
         {
             "fullName": "Alex Obice",
@@ -446,5 +446,301 @@
             "description": "",
             "imagePath": "/images/alex.jpeg"
         }
-    ]
+    ],
+    "privacyPolicy": {
+        "introduction": {
+            "title": "SUBA TECHNOLOGY, INC. WEBSITE PRIVACY POLICY",
+            "effectiveDate": "Effective Date: February 1, 2025",
+            "paragraphs": [
+                "This Privacy Policy (\"<b class=\"fw-bold\">Policy</b>\") discloses how <b class=\"fw-bold\">SUBA TECHNOLOGY, INC</b>, a California corporation. (\"<b class=\"fw-bold\">SUBA TECHNOLOGY, INC</b>,\" \"<b class=\"fw-bold\">we</b>,\" \"<b class=\"fw-bold\">our</b>,\" or \"<b class=\"fw-bold\">us</b>\") collects, uses, stores, and discloses information about visitors and users (\"<b class=\"fw-bold\">you</b>\" or \"<b class=\"fw-bold\">your</b>\") of the webpages operated by SUBA TECHNOLOGY, INC and branded with the SUBA TECHNOLOGY name (collectively, the \"<b class=\"fw-bold\">SUBA TECHNOLOGY Sites</b>\").",
+                "By using the SUBA TECHNOLOGY Sites, you agree to the terms of this Policy. If you do not agree with the practices described in this Policy, please do not use the SUBA TECHNOLOGY Sites."
+            ]
+        },
+        "sections": [
+            {
+                "subjectTitle": "1. PERSONAL DATA WE COLLECT",
+                "subsections": [
+                    {
+                        "subjectTitle": "1.1 Information We Collect Directly",
+                        "message": "We may collect, store, and use various types of Personal Data about you, including but not limited to:",
+                        "list": {
+                            "isNumbered": false,
+                            "items": [
+                                {
+                                    "point": "Technical Information:",
+                                    "info": "Information about your computer or other device, such as IP address or other device identifiers, browser type and version, operating system, referral source, length of visit, page views, and navigation paths. We may collect this through cookies and similar technologies."
+                                },
+                                {
+                                    "point": "Registration and Profile Information:",
+                                    "info": "Information provided when registering on SUBA TECHNOLOGY Sites or completing profile details (e.g., salutation, first and last name, email address, title or function, phone number, projects and employment or company details, country and other location details)."
+                                },
+                                {
+                                    "point": "Communication Preferences:",
+                                    "info": "Your subscription choices (e.g., newsletters, alerts, email notifications)."
+                                },
+                                {
+                                    "point": "Communications:",
+                                    "info": "Information you send to us via forms, emails, or other means, including contact information, the content of the communication, and metadata (e.g., date and time)."
+                                },
+                                {
+                                    "point": "Employment-Related Information:",
+                                    "info": "Information you provide via our Careers page (e.g., résumé, cover letter) to apply for open positions."
+                                },
+                                {
+                                    "point": "Additional Data:",
+                                    "info": "Any other Personal Data you choose to submit to SUBA TECHNOLOGY through the SUBA TECHNOLOGY Sites."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "subjectTitle": "1.2 Information We Collect from Other Sources",
+                        "message": "We may also collect information about you from publicly available databases, joint marketing partners, social media platforms, or other third parties (e.g., your company name, industry, job title, or location)."
+                    },
+                    {
+                        "subjectTitle": "1.3 Third-Party Personal Data",
+                        "message": "If you submit any Personal Data about other individuals to us, you represent that you have their consent or otherwise have the authority to do so and to permit us to use that information by this Policy."
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "2. HOW WE USE YOUR PERSONAL DATA",
+                "subsections": [
+                    {
+                        "message": "We use your Personal Data for purposes that include, but are not limited to:",
+                        "list": {
+                            "isNumbered": true,
+                            "items": [
+                                {
+                                    "point": "Providing, Personalizing, and Improving Services:",
+                                    "nestedList": [
+                                        "Administering and personalizing SUBA TECHNOLOGY Sites and offerings for you (e.g., presenting products, marketing messages, or other content tailored to your interests).",
+                                        "Sending you email notifications, and responding to inquiries and requests (e.g., sending technical documents, whitepapers, or other resources).",
+                                        "Processing your employment applications submitted through the Careers page."
+                                    ]
+                                },
+                                {
+                                    "point": "Marketing and Communication:",
+                                    "nestedList": [
+                                        "Sending you marketing communications about SUBA TECHNOLOGY and selected third-party businesses (in line with your communication preferences).",
+                                        "Conducting promotions or campaigns and assessing their effectiveness."
+                                    ]
+                                },
+                                {
+                                    "point": "Analytics and Business Operations:",
+                                    "nestedList": [
+                                        "Performing data analysis, diagnosing technical or service problems, or analyzing usage trends to improve the functionality, performance, and user experience of the SUBA TECHNOLOGY Sites.",
+                                        "Combining or associating the information you provide with information collected from other sources for analytics, marketing, or other legitimate business purposes."
+                                    ]
+                                },
+                                {
+                                    "point": "Compliance and Protection:",
+                                    "nestedList": [
+                                        "Enforcing or applying our policies or agreements.",
+                                        "Protecting the rights, property, or safety of SUBA TECHNOLOGY, its customers, or other users (e.g., fraud prevention, credit risk reduction).",
+                                        "Complying with applicable laws, regulations, or government requests."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "3. LEGAL BASES FOR PROCESSING (FOR USERS IN CERTAIN JURISDICTIONS)",
+                "subsections": [
+                    {
+                        "message": "<b class=\"fw-bold text-blue\">Where required by applicable law (e.g., the EU General Data Protection Regulation (“GDPR”)), we only collect and process Personal Data where we have legal bases to do so, such as:</b>",
+                        "list": {
+                            "isNumbered": false,
+                            "items": [
+                                {
+                                    "info": "Your <b class=\"fw-bold text-blue\">consent</b> (e.g., for direct marketing or certain cookie use)."
+                                },
+                                {
+                                    "info": "Our <b class=\"fw-bold text-blue\">legitimate interests</b> (e.g., for website analytics, marketing, or improving our services) unless those interests are overridden by your fundamental rights and freedoms."
+                                },
+                                {
+                                    "info": "<b class=\"fw-bold text-blue\">Contractual necessity</b> (e.g., to manage your account or process your requests)."
+                                },
+                                {
+                                    "info": "<b class=\"fw-bold text-blue\">Legal obligations</b> (e.g., responding to lawful requests by public authorities)."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "4. DISCLOSURE OF YOUR PERSONAL DATA",
+                "subsections": [
+                    {
+                        "subjectTitle": "4.1 Affiliated Entities",
+                        "message": "We may share your Personal Data with our subsidiaries, affiliates, and their employees or officers as necessary for the purposes outlined in this Policy."
+                    },
+                    {
+                        "subjectTitle": "4.2 Third-Party Service Providers",
+                        "message": "We may share your Personal Data with trusted third-party providers for data storage, website hosting, data analysis, information technology, marketing, email delivery, or other similar services."
+                    },
+                    {
+                        "subjectTitle": "4.3 Business Transfers",
+                        "message": "If Sample company undergoes a merger, acquisition, reorganization, sale of assets, joint venture, assignment, or similar business transaction (including in connection with any bankruptcy or similar proceeding), your Personal Data may be transferred as part of that transaction."
+                    },
+                    {
+                        "subjectTitle": "4.4 Legal Obligations and Protection",
+                        "message": "We may disclose Personal Data as needed to:",
+                        "list": {
+                            "isNumbered": false,
+                            "items": [
+                                {
+                                    "info": "Comply with applicable laws, regulations, or legal processes."
+                                },
+                                {
+                                    "info": "Respond to requests from courts, law enforcement agencies, or other government authorities (including authorities outside your country of residence)."
+                                },
+                                {
+                                    "info": "Protect the rights, privacy, safety, or property of SUBA TECHNOLOGY, its customers, or others."
+                                },
+                                {
+                                    "info": "Enforce our policies or agreements; pursue available remedies; or limit damages."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "5. INTERNATIONAL DATA TRANSFERS",
+                "subsections": [
+                    {
+                        "message": "Your Personal Data may be transferred to, stored in, and processed in countries other than your own, including the United States, where we or our service providers have operations. We will take steps to ensure that your Personal Data receives an adequate level of protection (for example, by using the European Commission’s Standard Contractual Clauses) in the jurisdictions in which we process it."
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "6. COOKIES AND SIMILAR TECHNOLOGIES",
+                "subsections": [
+                    {
+                        "subjectTitle": "6.1 Use of Cookies",
+                        "message": "Cookies are small text files stored on your device by websites you visit. We use cookies for multiple purposes, including to:",
+                        "list": {
+                            "isNumbered": false,
+                            "items": [
+                                {
+                                    "info": "Provide you with more personalized browsing experience."
+                                },
+                                {
+                                    "info": "Understand how visitors interact with our Sites."
+                                },
+                                {
+                                    "info": "Carry out analytics and marketing activities."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "subjectTitle": "6.2 Managing Cookies",
+                        "message": "Most browsers are set to accept cookies by default. You can typically adjust your browser settings to reject cookies or to alert you when a cookie is placed on your device. However, refusing or deleting cookies may impair the functionality of certain areas of our Sites."
+                    },
+                    {
+                        "subjectTitle": "6.3 Do Not Track",
+                        "message": "Some browsers may send “Do Not Track” signals. Our Sites currently do not respond to such signals."
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "7. SECURITY OF YOUR PERSONAL DATA",
+                "subsections": [
+                    {
+                        "message": "We maintain technical, administrative, and physical safeguards designed to protect your Personal Data from loss, unauthorized access, destruction, misuse, modification, or improper disclosure. These measures may include encryption, restricted access, firewalls, and other security protocols. However, no website or online service can guarantee absolute security."
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "8. DATA RETENTION",
+                "subsections": [
+                    {
+                        "message": "We will retain your Personal Data only for as long as necessary to fulfill the purposes described in this Policy, unless a longe"
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "9. MINORS AND CHILDREN’S PRIVACY",
+                "subsections": [
+                    {
+                        "message": "The SUBA TECHNOLOGY Sites are not directed to individuals under the age of 18. We do not knowingly collect Personal Data from anyone under 18 (or under the applicable age of majority in your jurisdiction). If you believe we might have any information from or about a minor, please contact us so we can investigate and address the issue promptly."
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "10. YOUR RIGHTS AND CHOICES",
+                "subsections": [
+                    {
+                        "message": "Depending on applicable law (e.g., GDPR, California Consumer Privacy Act \"<b class=\"fw-bold\">CCPA</b>,\" or other regional legislation), you may have some or all of the following rights regarding your Personal Data:",
+                        "list": {
+                            "isNumbered": false,
+                            "items": [
+                                {
+                                    "point": "Access:",
+                                    "info": "Request confirmation that we process your Personal Data, or obtain a copy."
+                                },
+                                {
+                                    "point": "Correction:",
+                                    "info": "Request correction of any inaccurate or incomplete Personal Data."
+                                },
+                                {
+                                    "point": "Deletion / Right to Be Forgotten:",
+                                    "info": "Ask us to delete your Personal Data or stop processing it."
+                                },
+                                {
+                                    "point": "Restriction:",
+                                    "info": "Request to limit how we process your Personal Data."
+                                },
+                                {
+                                    "point": "Data Portability:",
+                                    "info": "Receive your Personal Data in a structured, commonly used, and machine-readable format, or request we transfer it to another entity."
+                                },
+                                {
+                                    "point": "Objection to Processing:",
+                                    "info": "Object to certain types of processing, including direct marketing."
+                                },
+                                {
+                                    "point": "Withdraw Consent:",
+                                    "info": "If processing is based on consent, you may withdraw that consent at any time."
+                                },
+                                {
+                                    "point": "Lodge a Complaint:",
+                                    "info": "File a complaint with a data protection authority or regulatory body."
+                                }
+                            ]
+                        },
+                        "footnotes": [
+                            "To exercise your rights, please contact us at <b class=\"fw-bold\">Info@subatech.com</b> with your name, company name (if applicable), and a detailed description of your request. <b class=\"fw-bold\">We may require you to verify your identity</b> before processing certain requests.",
+                            "You can also manage certain communication preferences by following the “unsubscribe” instructions included in our marketing emails or by contacting us directly."
+                        ]
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "11. CHANGES TO THIS PRIVACY POLICY",
+                "subsections": [
+                    {
+                        "message": "We reserve the right to update or modify this Policy at any time. If we make material changes, we will post the updated Policy on the SUBA TECHNOLOGY Sites and, if required by applicable law, notify you by email or other prominent means. The Effective Date at the top of this Policy indicates when it was last revised."
+                    }
+                ]
+            },
+            {
+                "subjectTitle": "12. CONTACT US",
+                "subsections": [
+                    {
+                        "message": "If you have any questions or concerns about this Policy or about how your Personal Data is handled, please contact us at:",
+                        "footnotes": [
+                            "<b class=\"fw-bold\">SUBA TECHNOLOGY, INC.</b><br><b class=\"fw-bold\">Email:</b> Info@subatech.com", 
+                            "When contacting us, please include your name, the name of the SUBA TECHNOLOGY Sites or service you used, and a detailed description of your inquiry."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 }
