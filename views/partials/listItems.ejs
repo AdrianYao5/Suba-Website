@@ -1,0 +1,17 @@
+<% for (const item of listItems) { %>
+    <li class="mt-2">
+        <% if (Object.hasOwn(item, "point")) { %>
+            <b class="fw-bold text-blue"><%= item.point %> </b>
+        <% } %> 
+        <% if (Object.hasOwn(item, "info")) { %>
+            <%- item.info %>
+        <% } %>
+        <% if (Object.hasOwn(item, "nestedList")) { %>
+            <ul>
+                <% for(const nestedItem of item.nestedList) { %>
+                    <li class="mt-2"><%= nestedItem %></li>
+                <% } %>
+            </ul>
+        <% } %>
+    </li>
+<% } %>
