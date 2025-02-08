@@ -315,6 +315,9 @@ textarea.form-control {
 .industry-card .card-link {
     width: 100%;
     height: 100%;
+}
+
+.features .card-link, .features .card-container {
     z-index: 1;
 }
 
