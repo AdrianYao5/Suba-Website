@@ -2,15 +2,59 @@
 <main class="comfortaa page-content">
     <div class="text-light text-center">
         <div class="img-container">
-            <img class="img-background" src="/images/suba-building.png">
-            <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
-                <div class="container p-5">
-                    <h1 class="display-3 fw-bold text-center">
-                        Our Privacy Policy
-                    </h1>
+            <img class="img-background" src="/images/subaBackgroundNew.jpg">
+            <div class="img-text p-5 d-flex justify-content-start align-items-end">
+                <div class="container-fluid">
+                    <h1 class="display-3 fw-bold text-start">Our Privacy Policy</h1>
                 </div>
             </div>
         </div>
     </div>
+    <% if (locals.content) { const documentContent = locals.content; %>
+    <div class="text-light text-start blue-bg-2" data-bs-theme="light">
+        <div class="container-fluid p-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="container-fluid p-5">
+                        <h4 class="fs-2 fw-bold text-blue"><%= documentContent.introduction.title %></h4>
+                        <h6 class="mt-4 fs-4 fw-bold text-blue"><%= documentContent.introduction.effectiveDate %></h6>
+                        <% for (const p of documentContent.introduction.paragraphs) { %>
+                            <p class="mt-4 fs-5 fw-lighter"><%- p %></p>
+                        <% } %>
+                    </div>
+                    <% for (const section of documentContent.sections) { %>
+                        <div class="container-fluid p-5 border-top border-3">
+                            <h6 class="fs-3 fw-bold text-blue"><%= section.subjectTitle %></h6>
+                            <% for (const subsection of section.subsections) { %>
+                                <div class="mt-4 container-fluid">
+                                    <% if (Object.hasOwn(subsection, "subjectTitle")) { %>
+                                        <h4 class="mb-3 fs-4 fw-bold text-blue"><%= subsection.subjectTitle %></h4>
+                                    <% } %>
+                                    <p class="fs-5 fw-lighter"><%- subsection.message %></p>
+                                    <% if (Object.hasOwn(subsection, "list")) { %>
+                                        <% if (subsection.list.isNumbered) { %>
+                                            <ol class="mt-3 fs-5">
+                                                <%- include("partials/listItems.ejs", { listItems: subsection.list.items }); %>
+                                            </ol>
+                                        <% } else { %>
+                                            <ul class="mt-3 fs-5">
+                                                <%- include("partials/listItems.ejs", { listItems: subsection.list.items }); %>
+                                            </ul>
+                                        <% } %>
+                                    <% } %>
+                                    <% if (Object.hasOwn(subsection, "footnotes")) { %>
+                                        <% for(const footnote of subsection.footnotes) { %>
+                                            <p class="mt-4 fs-5 fw-lighter"><%- footnote %></p>
+                                        <% } %>
+                                    <% } %>
+                                </div>
+                            <% } %>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% } %>
 </main>
 <%- include("partials/footer.ejs"); %>
