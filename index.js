@@ -119,6 +119,7 @@ app.get("/careers", (req, res) => {
 });
 
 app.get("/privacyPolicy", (req, res) => {
+  res.locals = { content: siteData.privacyPolicy }
   res.render("privacyPolicy.ejs");
 });
 
