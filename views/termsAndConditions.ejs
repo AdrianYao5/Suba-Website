@@ -1,15 +1,12 @@
-<%- include("partials/header.ejs", { pageTitle: "Terms and Conditions" }); %>
+<%- include("partials/header.ejs", { pageTitle: "Manufacturing Agreements" }); %>
 <main class="comfortaa page-content">
-    <div class="text-light text-center">
-        <div class="img-container">
-            <img class="img-background" src="/images/suba-building.png">
-            <div class="img-text p-5 d-flex justify-content-center align-items-end dark-transparent-bg">
-                <div class="container p-5">
-                    <h1 class="display-3 fw-bold text-center">
-                        Terms and Conditions
-                    </h1>
-                </div>
-            </div>
+    <div class="text-light text-start blue-bg-2" data-bs-theme="light">
+        <div class="container-fluid d-flex justify-content-center">
+            <object class="pdf-viewer" type="application/pdf" data="/documents/subaMSA-v3.pdf?#zoom=110&navpanes=0">
+                <p class="fw-lighter fs-5">
+                    Unable to display the contents of this file. Please download the document.
+                </p>
+            </object>
         </div>
     </div>
 </main>
