@@ -304,6 +304,11 @@ textarea.form-control {
     max-width: 45%;
 }
 
+.pdf-viewer {
+    width: 90%;
+    height: 100vh;
+}
+
 .features .card > .card-body {
     color: white;
     display: flex;
