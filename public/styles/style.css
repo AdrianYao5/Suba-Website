@@ -23,7 +23,9 @@ html, body {
     color: var(--steel-blue);
 }
 
-.text-light-blue {
+.text-light-blue,
+.text-light-blue .nav-link, 
+.text-light-blue .dropdown-item {
     color: #0081AB;
 }
 
@@ -41,12 +43,18 @@ footer .nav-link, footer .dropdown-item {
     color: #fff;
 }
 
-.page-navbar, .page-navbar .navbar-brand > img {
+.page-navbar, 
+.page-navbar .navbar-brand-container, 
+.page-navbar .navbar-brand-container img {
     height: var(--navbar-height);
 }
 
 .page-navbar > .navbar {
     height: 100%;
+}
+
+.page-navbar > .navbar > div {
+    min-height: 100%;
 }
 
 .page-navbar .navbar-toggler-icon {
