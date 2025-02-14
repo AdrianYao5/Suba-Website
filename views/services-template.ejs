@@ -64,6 +64,11 @@
                         <div class="col-12 col-lg-7 <% if (locals.serviceCode === "AMS") { %>bg-light<% } %> 
                             <% if (k % 2 === 1) { %>order-lg-first<% } %>">
                             <% if(Array.isArray(galleryImages)) { %>
+                                <% if(galleryImages.length === 1) { %>
+                                    <div class="d-flex">
+                                        <img class="img-fluid" src="<%= galleryImages[0].file %>">
+                                    </div>
+                                <% } else { %>
                                 <div class="row g-0 image-gallery">
                                     <% let notPanoramicCount = 0; for(let k=0; k < galleryImages.length; k++) { %>
                                         <div class="d-flex <% if (galleryImages[k].isPanoramic) { notPanoramicCount = 0; %>col-12 justify-content-center
@@ -77,9 +82,10 @@
                                             <img class="img-fluid <% if (galleryImages[k].shrink) { %>
                                                 img-shrink my-auto<% } %>" src="<%= galleryImages[k].file %>">
                                         </div>
-                                        <% } %>
-                                </div>
+                                    <% } %>
                                 <% } %>
+                                </div>
+                            <% } %>
                         </div>
                     </div>
                 </div>
