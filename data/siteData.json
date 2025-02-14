@@ -236,13 +236,7 @@
                             }
                         ],
                         "imagePaths": [
-                            { "file": "/images/machine1.png", "shrink": false, "isPanoramic": false },
-                            { "file": "/images/machine2.png", "shrink": false, "isPanoramic": false },
-                            { "file": "/images/machine4.png", "shrink": false, "isPanoramic": false },
-                            { "file": "/images/equipment.png", "shrink": false, "isPanoramic": true },
-                            { "file": "/images/vae3.png", "shrink": true, "isPanoramic": false },
-                            { "file": "/images/machine3.png", "shrink": false, "isPanoramic": false },
-                            { "file": "/images/xrayMachine.png", "shrink": false, "isPanoramic": false }
+                            { "file": "/images/amsCollage.png", "shrink": false, "isPanoramic": false }
                         ],
                         "footnote": ""
                     }
